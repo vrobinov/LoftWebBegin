@@ -1,0 +1,100 @@
+
+.welcome{
+    background: url(/image/welcome/head-bg.jpg) no-repeat center top / cover;
+    min-height: 653px;
+}
+.welcome__wrap{
+    padding-top: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 583px;
+}
+.welcome__content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 64px;
+}
+.welcome__title{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    text-transform: uppercase;
+    margin-bottom: 17px;
+}
+.welcome__text{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 25px;
+    margin-bottom: 39px;
+}
+.welcome__btn{
+    width: 156px;
+    height: 60px;
+    background: $yellow;
+    border-radius: 100px;
+    border:0;
+
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    color: #000000;
+    text-transform: uppercase;
+    &:hover{
+        background: #FFD517
+    }
+}
+.welcome__footer{
+    display: flex;
+    align-items: center;
+    .welcome__item{
+        width: 142px;
+        display: flex;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 18px;
+        margin-right: 33px;
+        img{
+            width: 35px;
+            height: 35px;
+            margin-right: 14px;
+        }
+    }
+}
+.dotsbar{
+    position: fixed;
+    top: 215px;
+    right: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    li{
+        width: 9px;
+        height: 9px;
+        background-color: #fff;
+        border-radius: 50%;
+        margin-bottom: 15px;
+        list-style-type: none ;
+    }
+}
+.dots-active{
+    display: block;
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    border: 2px solid #FFFFFF;
+    background: transparent;
+    padding: 8px;
+    margin-bottom: 7px;
+    li{
+        transform: translate(-50%, -50%);
+    }
+}   

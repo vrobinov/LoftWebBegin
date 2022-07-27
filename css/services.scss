@@ -1,0 +1,64 @@
+.services {
+    padding-top: 107px;
+    padding-bottom: 114px
+}
+.services__wrap,
+.services__head,
+.services__item {
+    display: flex;
+    flex-direction: column;
+}
+.services__head{
+    margin-bottom: 49px;
+}
+.services__title-wrap{
+    margin-bottom: 17px;
+}
+.services__desc {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #666666;
+}
+.services__content {
+    display: flex;
+    justify-content: space-between;
+}
+.services__item {
+    align-items: center;
+    width: 32%;
+    position: relative;
+    &:nth-child(-n+2)::after{
+        content:"";
+        position: absolute;
+        background: url("/image/services/elips-decor.png") no-repeat;
+        width: 67px;
+        height: 21px;
+        left: 273px;
+        top: 57px;
+    }
+}
+.wrap__grey {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    background: #F2F5F4;
+    margin-bottom: 20px;
+    img{
+        transform: translate(50%, 50%);
+    }
+}
+.services__caption-wrap{
+    margin-bottom: 20px;
+}
+.services__info {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #666666;
+    margin-bottom: 20px;
+}

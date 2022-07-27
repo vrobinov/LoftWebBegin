@@ -1,0 +1,40 @@
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.header__wrap{
+    padding:37px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.header__item{
+    list-style-type: none;
+    margin: 0 11px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+}
+.header__contacts{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img{
+        margin-right: 6px;
+    }
+    .header__phone{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 18px;
+}
+}
