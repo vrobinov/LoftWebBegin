@@ -99,7 +99,7 @@ body {
     line-height: 18px; }
 
 .welcome {
-  background: url(/image/welcome/head-bg.jpg) no-repeat center top/cover;
+  background: url(../image/welcome/head-bg.jpg) no-repeat center top/cover;
   min-height: 653px; }
 
 .welcome__wrap {
