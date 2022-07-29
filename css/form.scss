@@ -1,0 +1,136 @@
+.form__section {
+    background: url(../image/form/bg-form.jpeg) no-repeat center top / cover;
+    min-height: 652px;
+}
+.wrap__bg{
+    background-color: #2b2b2b66; 
+    min-height: inherit;   
+    padding: 62px 0 85px 0;
+}
+.form__title-wrap {
+    margin-bottom: 59px;
+}
+.form {
+    display: flex;
+    justify-content: space-between;
+}
+.form__col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-right: 27px;
+    &:last-child{
+        margin-right: 0;
+    }
+}
+.form__row {
+    display: flex;
+    margin-bottom: 12px;
+}
+.form__block{
+    flex:1;
+    margin-right: 17px;
+    &:last-child{
+        margin-right: 0;
+    }
+    &--small{
+        margin-right: 14px;
+        &:last-child{
+        margin-right: 0;
+    }
+    }
+    &--textarea{
+        margin-right: 0px;
+        margin-bottom: 38px;
+    }
+}
+.form__row-title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+.form__row-input {
+    width: 100%;
+    border:0;
+    padding: 18px 12px;
+    border: 3px solid transparent;
+
+    &:focus{
+        outline: none;
+        border-color: $yellow;
+    }
+    &--textarea{
+        height: 155px;
+        resize: none;
+    }
+}
+
+.form__controls {
+    display: flex;
+    flex-wrap: wrap;
+}
+.radio{
+    display: flex;
+    cursor: pointer;
+    user-select: none;
+    margin-right: 9px;
+    margin-bottom: 19px;
+    &:last-child{
+        margin-right: 0px;
+    }
+    &--elem{
+        display: none;
+        &:checked ~ .radio__visible{
+            &::before{
+                display: block;
+            }
+        }
+    }
+
+    &--checkbox{
+        .radio__visible{
+            border-radius: 4px;
+            &:before{
+                background: url(../image/form/chek.png)center center no-repeat;
+    }
+        }
+    }
+}
+.radio__visible {
+    position:relative;
+    width: 25px;
+    height: 25px;
+    background: #FFFFFF;
+    border-radius: 50%;
+    margin-right: 10px;
+    &:before{
+        content:"";
+        position: absolute;
+        width: 13px;
+        height: 13px;
+        background-color: $yellow;
+        border-radius: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: none;
+    }
+}
+
+.form__btns {
+    display: flex;
+
+}
+.form__btn-reset {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: 22px;
+}

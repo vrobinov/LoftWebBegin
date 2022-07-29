@@ -46,8 +46,12 @@
     border-radius: 50%;
     background: #F2F5F4;
     margin-bottom: 20px;
+    position: relative;
     img{
-        transform: translate(50%, 50%);
+        position: absolute;
+        top: 50%;
+        left:50%;
+        transform: translate(-50%, -50%);
     }
 }
 .services__caption-wrap{

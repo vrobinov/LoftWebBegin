@@ -32,9 +32,9 @@ a {
 
 body {
   font-family: 'Alegreya Sans', sans-serif;
-  color: #FFFFFF;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  color: #FFFFFF; }
 
 .container {
   width: 100%;
@@ -51,6 +51,8 @@ body {
   text-transform: uppercase; }
   .main__title--black {
     color: #292929; }
+  .main__title--white {
+    color: #FFFFFF; }
 
 .block__caption {
   font-style: normal;
@@ -59,6 +61,23 @@ body {
   line-height: 32px;
   text-align: center;
   color: #292929; }
+
+.main__btn {
+  width: 156px;
+  height: 60px;
+  background: #FEDB3F;
+  border-radius: 100px;
+  border: 0;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: #000000;
+  cursor: pointer;
+  text-transform: uppercase; }
+  .main__btn:hover {
+    background: #FFD517; }
 
 .header {
   position: absolute;
@@ -130,22 +149,6 @@ body {
   font-size: 21px;
   line-height: 25px;
   margin-bottom: 39px; }
-
-.welcome__btn {
-  width: 156px;
-  height: 60px;
-  background: #FEDB3F;
-  border-radius: 100px;
-  border: 0;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 16px;
-  line-height: 18px;
-  text-align: center;
-  color: #000000;
-  text-transform: uppercase; }
-  .welcome__btn:hover {
-    background: #FFD517; }
 
 .welcome__footer {
   display: flex;
@@ -237,9 +240,13 @@ body {
   height: 128px;
   border-radius: 50%;
   background: #F2F5F4;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  position: relative; }
   .wrap__grey img {
-    transform: translate(50%, 50%); }
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
 
 .services__caption-wrap {
   margin-bottom: 20px; }
@@ -310,5 +317,119 @@ body {
   .author-active li {
     transform: translate(0, 3%);
     margin: -3px; }
+
+.form__section {
+  background: url(../image/form/bg-form.jpeg) no-repeat center top/cover;
+  min-height: 652px; }
+
+.wrap__bg {
+  background-color: #2b2b2b66;
+  min-height: inherit;
+  padding: 62px 0 85px 0; }
+
+.form__title-wrap {
+  margin-bottom: 59px; }
+
+.form {
+  display: flex;
+  justify-content: space-between; }
+
+.form__col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-right: 27px; }
+  .form__col:last-child {
+    margin-right: 0; }
+
+.form__row {
+  display: flex;
+  margin-bottom: 12px; }
+
+.form__block {
+  flex: 1;
+  margin-right: 17px; }
+  .form__block:last-child {
+    margin-right: 0; }
+  .form__block--small {
+    margin-right: 14px; }
+    .form__block--small:last-child {
+      margin-right: 0; }
+  .form__block--textarea {
+    margin-right: 0px;
+    margin-bottom: 38px; }
+
+.form__row-title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF; }
+
+.form__row-input {
+  width: 100%;
+  border: 0;
+  padding: 18px 12px;
+  border: 3px solid transparent; }
+  .form__row-input:focus {
+    outline: none;
+    border-color: #FEDB3F; }
+  .form__row-input--textarea {
+    height: 155px;
+    resize: none; }
+
+.form__controls {
+  display: flex;
+  flex-wrap: wrap; }
+
+.radio {
+  display: flex;
+  cursor: pointer;
+  user-select: none;
+  margin-right: 9px;
+  margin-bottom: 19px; }
+  .radio:last-child {
+    margin-right: 0px; }
+  .radio--elem {
+    display: none; }
+    .radio--elem:checked ~ .radio__visible::before {
+      display: block; }
+  .radio--checkbox .radio__visible {
+    border-radius: 4px; }
+    .radio--checkbox .radio__visible:before {
+      background: url(../image/form/chek.png) center center no-repeat; }
+
+.radio__visible {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  margin-right: 10px; }
+  .radio__visible:before {
+    content: "";
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    background-color: #FEDB3F;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none; }
+
+.form__btns {
+  display: flex; }
+
+.form__btn-reset {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-left: 22px; }
 
 /*# sourceMappingURL=main.css.map */

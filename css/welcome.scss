@@ -32,24 +32,7 @@
     line-height: 25px;
     margin-bottom: 39px;
 }
-.welcome__btn{
-    width: 156px;
-    height: 60px;
-    background: $yellow;
-    border-radius: 100px;
-    border:0;
 
-    font-style: normal;
-    font-weight: 800;
-    font-size: 16px;
-    line-height: 18px;
-    text-align: center;
-    color: #000000;
-    text-transform: uppercase;
-    &:hover{
-        background: #FFD517
-    }
-}
 .welcome__footer{
     display: flex;
     align-items: center;

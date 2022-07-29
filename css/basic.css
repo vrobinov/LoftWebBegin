@@ -1,8 +1,8 @@
 body {
   font-family: 'Alegreya Sans', sans-serif;
-  color: #FFFFFF;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  color: #FFFFFF; }
 
 .container {
   width: 100%;
@@ -19,6 +19,8 @@ body {
   text-transform: uppercase; }
   .main__title--black {
     color: #292929; }
+  .main__title--white {
+    color: #FFFFFF; }
 
 .block__caption {
   font-style: normal;
@@ -27,5 +29,22 @@ body {
   line-height: 32px;
   text-align: center;
   color: #292929; }
+
+.main__btn {
+  width: 156px;
+  height: 60px;
+  background: #FEDB3F;
+  border-radius: 100px;
+  border: 0;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: #000000;
+  cursor: pointer;
+  text-transform: uppercase; }
+  .main__btn:hover {
+    background: #FFD517; }
 
 /*# sourceMappingURL=basic.css.map */

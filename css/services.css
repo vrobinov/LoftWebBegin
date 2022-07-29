@@ -44,9 +44,13 @@
   height: 128px;
   border-radius: 50%;
   background: #F2F5F4;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  position: relative; }
   .wrap__grey img {
-    transform: translate(50%, 50%); }
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
 
 .services__caption-wrap {
   margin-bottom: 20px; }
