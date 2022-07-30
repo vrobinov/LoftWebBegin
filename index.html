@@ -11,260 +11,295 @@
 </head>
 
 <body>
-    <!-----------------HEADER START---------------------->
-    <header class="header">
-        <div class="container">
-            <div class="header__wrap">
-                <a href="/">
-                    <img src="image/welcome/logo.svg" alt="logo" class="header__logo">
-                </a>
-                <nav class="header__nav">
-                    <ul>
-                        <a href="#">
-                            <li class="header__item">О нас</li>
+    <div class="wrapper">
+        <div class="maincontent">
+            <!-----------------WELCOME START---------------------->
+            <section class="welcome">
+                <div class="container welcome__container">
+                    <!-----------------HEADER START---------------------->
+                    <header class="header">
+                        <a href="/">
+                            <img src="image/welcome/logo.svg" alt="logo" class="logo">
                         </a>
-                        <a href="#">
-                            <li class="header__item">Серфборды</li>
+                        <nav class="menu">
+                            <ul class="menu__list">
+                                <li class="menu__item"><a href="#" class="menu__link">О нас</a></li>
+                                <li class="menu__item"><a href="#" class="menu__link">Серфборды</a></li>
+                                <li class="menu__item"><a href="#" class="menu__link">Команда</a></li>
+                                <li class="menu__item"><a href="#" class="menu__link">Меню</a></li>
+                                <li class="menu__item"><a href="#" class="menu__link">Отзывы</a></li>
+                                <li class="menu__item"><a href="#" class="menu__link">Как мы работаем</a></li>
+                                <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+                            </ul>
+                        </nav>
+                        <a href="tel: 88009039090" class="number-phone">
+                            <span class="number-phone__icon">
+                                <img src="icons/phone.svg" alt="phone" class="number-phone__icon--elem">
+                            </span>
+                            <span class="number-phone__text">8 800 903 90 90</span>
                         </a>
-                        <a href="#">
-                            <li class="header__item">Команда</li>
-                        </a>
-                        <a href="#">
-                            <li class="header__item">Меню</li>
-                        </a>
-                        <a href="#">
-                            <li class="header__item">Отзывы</li>
-                        </a>
-                        <a href="#">
-                            <li class="header__item">Как мы работаем</li>
-                        </a>
-                        <a href="#">
-                            <li class="header__item">Контакты</li>
-                        </a>
-                    </ul>
-                </nav>
-                <div class="header__contacts">
-                    <img src="icons/phone.svg" alt="phone">
-                    <a href="tel: 88009039090" class="header__phone">8 800 903 90 90</a>
-                </div>
-            </div>
-        </div>
-    </header>
-    <!-----------------HEADER END---------------------->
-    <!-----------------WELCOME START---------------------->
-    <section class="welcome">
-        <div class="container">
-            <div class="welcome__wrap">
-                <article class="welcome__content">
-                    <h1 class="welcome__title">Профессиональные доски для <br>
-                        серфинга</h1>
-                    <p class="welcome__text">Самый большой выбор серфбордов в мире</p>
-                    <button class="main__btn">Заказать</button>
-                </article>
-                <div class="welcome__footer">
-                    <div class="welcome__item"><img src="icons/surf.svg" alt="board"> Уникальный дизайн</div>
-                    <div class="welcome__item"><img src="icons/saw.svg" alt="saw"> Прочные материалы</div>
-                    <div class="welcome__item"><img src="icons/deliveri.svg" alt="car"> Быстрая доставка</div>
-                </div>
-            </div>
-        </div>
-        <ul class="dotsbar">
-            <a href="#">
-                <li></li>
-            </a>
-            <a href="#">
-                <li></li>
-            </a>
-            <a href="#">
-                <li></li>
-            </a>
-            <a href="#">
-                <li></li>
-            </a>
-            <a href="#">
-                <li></li>
-            </a>
-            <a href="#">
-                <li></li>
-            </a>
-            <a href="#" class="dots-active">
-                <li></li>
-            </a>
-            <a href="#">
-                <li></li>
-            </a>
-            <a href="#">
-                <li></li>
-            </a>
-        </ul>
-    </section>
-    <!-----------------WELCOME END---------------------->
-    <!-----------------SERVICES START---------------------->
-    <section class="services">
-        <div class="container">
-            <div class="services__wrap">
-                <div class="services__head">
-                    <div class="services__title-wrap">
-                        <h2 class="main__title main__title--black">почему Surfboard?</h2>
+                    </header>
+                    <!-----------------HEADER END---------------------->
+                    <div class="welcome__content">
+                        <h1 class="welcome__title">Профессиональные доски для
+                            серфинга</h1>
+                        <p class="welcome__text">Самый большой выбор серфбордов в мире</p>
+                        <button class="button">Заказать</button>
                     </div>
-                    <p class="services__desc">Мы создаем уникальные и качественные доски из прочных и экологичных
-                        материалов.</p>
-                </div>
-                <div class="services__content">
-                    <div class="services__item">
-                        <div class="wrap__grey">
-                            <img src="image/services/perfect.svg" alt="perfect">
-                        </div>
-                        <div class="services__caption-wrap">
-                            <h3 class="block__caption">Perfect Fit</h3>
-                        </div>
-                        <p class="services__info">Мы создаем доски по индивидуальным замерам. Мы учитываем при создании
-                            ваш рост, вес и уровень
-                            подготовки.</p>
-                    </div>
-                    <div class="services__item">
-                        <div class="wrap__grey">
-                            <img src="image/services/strong.svg" alt="strong">
-                        </div>
-                        <div class="services__caption-wrap">
-                            <h3 class="block__caption">Strong</h3>
-                        </div>
-                        <p class="services__info">Мы используем только качественные и экологичные материалы. Ваша доска
-                            прослужит вам долгие
-                            годы.</p>
-                    </div>
-                    <div class="services__item">
-                        <div class="wrap__grey">
-                            <img src="image/services/unique.svg" alt="unique">
-                        </div>
-                        <div class="services__caption-wrap">
-                            <h3 class="block__caption">Unique</h3>
-                        </div>
-                        <p class="services__info">Вы станете обладателем уникального серфборда. Доска будет выполнена по
-                            вашему уникальному
-                            дизайну. </p>
+                    <div class="welcome__footer">
+                        <ul class="features">
+                            <li class="features__item feature">
+                                <div class="feature__icon">
+                                    <img src="icons/surf.svg" alt="board">
+                                </div>
+                                <div class="feature__text">
+                                    Уникальный дизайн
+                                </div>
+                            </li>
+                            <li class="features__item feature">
+                                <div class="feature__icon">
+                                    <img src="icons/saw.svg" alt="saw">
+                                </div>
+                                <div class="feature__text">
+                                    Прочные материалы
+                                </div>
+                            </li>
+                            <li class="features__item feature">
+                                <div class="feature__icon">
+                                    <img src="icons/deliveri.svg" alt="car">
+                                </div>
+                                <div class="feature__text">
+                                    Быстрая доставка
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-    <!-----------------SERVICES END---------------------->
-    <!-----------------REVIEW START---------------------->
-    <section class="review">
-        <div class="container">
-            <div class="review__wrap">
-                <div class="review__title-wrap">
-                    <h2 class="main__title main__title--black">Отзывы</h2>
-                </div>
-                <article class="review__box">
-                    <img src="image/review/per-rev-one.jpg" alt="author">
-                    <div class="review__content">
-                        <div class="review__caption-wrap">
-                            <h3 class="block__caption">Лучший дизайн</h3>
+
+                <ul class="dotsbar">
+                    <a href="#" class="dots-active">
+                        <li></li>
+                    </a>
+                    <a href="#">
+                        <li></li>
+                    </a>
+                    <a href="#">
+                        <li></li>
+                    </a>
+                    <a href="#">
+                        <li></li>
+                    </a>
+                    <a href="#">
+                        <li></li>
+                    </a>
+                    <a href="#">
+                        <li></li>
+                    </a>
+                    <a href="#">
+                        <li></li>
+                    </a>
+                    <a href="#">
+                        <li></li>
+                    </a>
+                    <a href="#">
+                        <li></li>
+                    </a>
+                </ul>
+
+            </section>
+            <!-----------------WELCOME END---------------------->
+            <!-----------------SERVICES START---------------------->
+            <section class="section">
+                <div class="container">
+                    <div class="headline">
+                        <h2 class="section__title section__title--black headline__title">почему Surfboard?</h2>
+                        <div class="headline__suptitle">Мы создаем уникальные и качественные доски из прочных и
+                            экологичных
+                            материалов.
                         </div>
-                        <div class="review__text">
-                            Я увидела доски на сайте и влюбилась в их дизайн. К летнему сезону я заказала себе доску в
-                            SurfBoard. Дизайнер команды - волшебница! Она учла все мои предпочтения и комментарии. В
-                            итоге получился прекрасный дизайн. А я катаюсь на доске, которая мне нравится)
-                        </div>
-                        <div class="review__name-author">Ольга Макарова</div>
                     </div>
-                </article>
-                <div class="review__footer">
-                    <ul class="review__list-author">
-                        <a href="#" class="author-active">
-                            <li><img src="image/review/per-dots-one.png" alt="mini-author"></li>
-                        </a>
-                        <a href="#">
-                            <li><img src="image/review/per-dots-two.png" alt="mini-author"></li>
-                        </a>
-                        <a href="#">
-                            <li><img src="image/review/per-dots-three.png" alt="mini-author"></li>
-                        </a>
+                    <ul class="benefits">
+                        <li class="benefits__item benefit">
+                            <div class="benefit__image">
+                                <div class="benefit__image-wrap">
+                                    <img src="image/services/perfect.svg" alt="perfect" class="benefit__icon">
+                                </div>
+                            </div>
+                            <div class="benefit__text">
+                                <h3 class="benefit__title">Perfect Fit</h3>
+                                <div class="benefit__info">
+                                    <p>
+                                        Мы создаем доски по индивидуальным замерам. Мы учитываем при
+                                        создании
+                                        ваш рост, вес и уровень
+                                        подготовки.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="benefits__item benefit">
+                            <div class="benefit__image">
+                                <div class="benefit__image-wrap">
+                                    <img src="image/services/strong.svg" alt="strong" class="benefit__icon">
+                                </div>
+                            </div>
+                            <div class="benefit__text">
+                                <h3 class="benefit__title">Strong</h3>
+                                <div class="benefit__info">
+                                    <p>
+                                        Мы используем только качественные и экологичные материалы.
+                                        Ваша
+                                        доска
+                                        прослужит вам долгие
+                                        годы.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="benefits__item benefit">
+                            <div class="benefit__image">
+                                <div class="benefit__image-wrap">
+                                    <img src="image/services/unique.svg" alt="unique" class="benefit__icon">
+                                </div>
+                            </div>
+                            <div class="benefit__text">
+                                <h3 class="benefit__title">Unique</h3>
+                                <div class="benefit__info">
+                                    <p>
+                                        Вы станете обладателем уникального серфборда. Доска будет
+                                        выполнена по
+                                        вашему уникальному
+                                        дизайну.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
                     </ul>
                 </div>
-            </div>
-        </div>
-    </section>
-    <!-----------------REVIEW END---------------------->
-    <!-----------------FORM START---------------------->
-    <section class="form__section">
-        <div class="wrap__bg">
-            <div class="container">
-                <div class="form__title-wrap">
-                    <h2 class="main__title main__title--white">Закажите доску</h2>
+            </section>
+            <!-----------------SERVICES END---------------------->
+            <!-----------------REVIEW START---------------------->
+            <section class="review">
+                <div class="container">
+                    <div class="review__wrap">
+                        <div class="review__title-wrap">
+                            <h2 class="section__title section__title--black">Отзывы</h2>
+                        </div>
+                        <article class="review__box">
+                            <img src="image/review/per-rev-one.jpg" alt="author">
+                            <div class="review__content">
+                                <div class="review__caption-wrap">
+                                    <h3 class="block__caption">Лучший дизайн</h3>
+                                </div>
+                                <div class="review__text">
+                                    Я увидела доски на сайте и влюбилась в их дизайн. К летнему сезону я заказала себе
+                                    доску
+                                    в
+                                    SurfBoard. Дизайнер команды - волшебница! Она учла все мои предпочтения и
+                                    комментарии. В
+                                    итоге получился прекрасный дизайн. А я катаюсь на доске, которая мне нравится)
+                                </div>
+                                <div class="review__name-author">Ольга Макарова</div>
+                            </div>
+                        </article>
+                        <div class="review__footer">
+                            <ul class="review__list-author">
+                                <a href="#" class="author-active">
+                                    <li><img src="image/review/per-dots-one.png" alt="mini-author"></li>
+                                </a>
+                                <a href="#">
+                                    <li><img src="image/review/per-dots-two.png" alt="mini-author"></li>
+                                </a>
+                                <a href="#">
+                                    <li><img src="image/review/per-dots-three.png" alt="mini-author"></li>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <form class="form">
-                    <div class="form__col">
-                        <div class="form__row">
-                            <label class="form__block">
-                                <div class="form__row-title">Имя</div>
-                                <input type="text" class="form__row-input">
-                            </label>
-                            <label class="form__block">
-                                <div class="form__row-title">Телефон</div>
-                                <input type="number" class="form__row-input">
-                            </label>
+            </section>
+            <!-----------------REVIEW END---------------------->
+            <!-----------------FORM START---------------------->
+            <section class="form__section">
+                <div class="wrap__bg">
+                    <div class="container">
+                        <div class="form__title-wrap">
+                            <h2 class="section__title section__title--white">Закажите доску</h2>
                         </div>
-                        <div class="form__row">
-                            <label class="form__block">
-                                <div class="form__row-title">Улица</div>
-                                <input type="text" class="form__row-input">
-                            </label>
-                        </div>
-                        <div class="form__row">
-                            <label class="form__block form__block--small">
-                                <div class="form__row-title">Дом</div>
-                                <input type="text" class="form__row-input">
-                            </label>
-                            <label class="form__block form__block--small">
-                                <div class="form__row-title">Корпус</div>
-                                <input type="text" class="form__row-input">
-                            </label>
-                            <label class="form__block form__block--small">
-                                <div class="form__row-title">Квартира</div>
-                                <input type="text" class="form__row-input">
-                            </label>
-                            <label class="form__block form__block--small">
-                                <div class="form__row-title">Этаж</div>
-                                <input type="text" class="form__row-input">
-                            </label>
-                        </div>
+                        <form class="form">
+                            <div class="form__col">
+                                <div class="form__row">
+                                    <label class="form__block">
+                                        <div class="form__row-title">Имя</div>
+                                        <input type="text" class="form__row-input">
+                                    </label>
+                                    <label class="form__block">
+                                        <div class="form__row-title">Телефон</div>
+                                        <input type="number" class="form__row-input">
+                                    </label>
+                                </div>
+                                <div class="form__row">
+                                    <label class="form__block">
+                                        <div class="form__row-title">Улица</div>
+                                        <input type="text" class="form__row-input">
+                                    </label>
+                                </div>
+                                <div class="form__row">
+                                    <label class="form__block form__block--small">
+                                        <div class="form__row-title">Дом</div>
+                                        <input type="text" class="form__row-input">
+                                    </label>
+                                    <label class="form__block form__block--small">
+                                        <div class="form__row-title">Корпус</div>
+                                        <input type="text" class="form__row-input">
+                                    </label>
+                                    <label class="form__block form__block--small">
+                                        <div class="form__row-title">Квартира</div>
+                                        <input type="text" class="form__row-input">
+                                    </label>
+                                    <label class="form__block form__block--small">
+                                        <div class="form__row-title">Этаж</div>
+                                        <input type="text" class="form__row-input">
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form__col">
+                                <label class="form__block form__block--textarea">
+                                    <div class="form__row-title">Комментарий</div>
+                                    <textarea class="form__row-input form__row-input--textarea"></textarea>
+                                </label>
+                                <div class="form__controls">
+                                    <label class="radio">
+                                        <input type="radio" name="option" class="radio--elem">
+                                        <div class="radio__visible"></div>
+                                        <div class="form__row-title">Оплата наличными</div>
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="option" class="radio--elem">
+                                        <div class="radio__visible"></div>
+                                        <div class="form__row-title">Оплата по карте</div>
+                                    </label>
+                                </div>
+                                <div class="form__controls">
+                                    <label class="radio radio--checkbox">
+                                        <input type="checkbox" class="radio--elem">
+                                        <div class="radio__visible"></div>
+                                        <div class="form__row-title">Не перезванивать</div>
+                                    </label>
+                                </div>
+                                <div class="form__btns">
+                                    <input type="submit" value="Заказать" class="button">
+                                    <input type="reset" value="Очистить" class="form__btn-reset">
+                                </div>
+                            </div>
+                        </form>
                     </div>
-                    <div class="form__col">
-                            <label class="form__block form__block--textarea">
-                                <div class="form__row-title">Комментарий</div>
-                                <textarea class="form__row-input form__row-input--textarea"></textarea>
-                            </label>
-                            <div class="form__controls">
-                                <label class="radio">
-                                    <input type="radio" name="option" class="radio--elem">
-                                    <div class="radio__visible"></div>
-                                    <div class="form__row-title">Оплата наличными</div>
-                                </label>
-                                <label class="radio">
-                                    <input type="radio" name="option" class="radio--elem">
-                                    <div class="radio__visible"></div>
-                                    <div class="form__row-title">Оплата по карте</div>
-                                </label>
-                            </div>
-                            <div class="form__controls">
-                                <label class="radio radio--checkbox">
-                                    <input type="checkbox" class="radio--elem">
-                                    <div class="radio__visible"></div>
-                                    <div class="form__row-title">Не перезванивать</div>
-                                </label>
-                            </div>
-                            <div class="form__btns">
-                                <input type="submit" value="Заказать" class="main__btn">
-                                <input type="reset" value="Очистить" class="form__btn-reset">
-                            </div>
-                    </div>
-                </form>
-            </div>
+                </div>
+            </section>
+            <!-----------------FORM END---------------------->
         </div>
-    </section>
-    <!-----------------FORM END---------------------->
+        <!-----------------MAINCONTENT END---------------------->
+    </div>
+    <!-----------------WRAPPER END---------------------->
 </body>
 
 </html>

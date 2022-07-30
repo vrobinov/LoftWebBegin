@@ -14,7 +14,7 @@
 .services__title-wrap {
   margin-bottom: 17px; }
 
-.services__desc {
+.headline__suptitle {
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -33,7 +33,7 @@
   .services__item:nth-child(-n+2)::after {
     content: "";
     position: absolute;
-    background: url("/image/services/elips-decor.png") no-repeat;
+    background: url("../image/services/elips-decor.png") no-repeat;
     width: 67px;
     height: 21px;
     left: 273px;

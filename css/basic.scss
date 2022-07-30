@@ -1,60 +1,39 @@
 
 //Здесь буду прописывать базовый стили, а также переменные и миксины
 $yellow:#FEDB3F;
+$white:#FFFFFF;
+$containerWidth: 940px;
+$fontSize: 18px;
 
+html,
+body{
+    height: 100%;
+}
 body {
     font-family: 'Alegreya Sans', sans-serif;
     margin: 0;
     padding: 0;
-    color: #FFFFFF;
+    color: $white;
+    position: relative;
 }
-
-.container {
+.wrapper{
+    position: relative;
     width: 100%;
-    max-width: 970px;
-    padding: 0 15px;
+    min-width: $containerWidth + 20px;
+    min-height: 100%;
+    overflow: hidden;
+}
+footer{
+    position: relative;
+    width: 100%;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+.container {
+    width: $containerWidth;
     margin: 0 auto;
 }
-.main__title {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 58px;
-    text-align: center;
-    text-transform: uppercase;
-    &--black{
-        color: #292929;
-    }
-    &--white{
-        color: #FFFFFF;
-    }    
-}
 
-.block__caption {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 27px;
-    line-height: 32px;
-    text-align: center;
-    color: #292929;
-}
-.main__btn{
-    width: 156px;
-    height: 60px;
-    background: $yellow;
-    border-radius: 100px;
-    border:0;
-
-    font-style: normal;
-    font-weight: 800;
-    font-size: 16px;
-    line-height: 18px;
-    text-align: center;
-    color: #000000;
-    cursor: pointer;
-    text-transform: uppercase;
-    &:hover{
-        background: #FFD517
-    }
-}
 

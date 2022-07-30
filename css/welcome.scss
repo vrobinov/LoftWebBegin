@@ -1,21 +1,22 @@
 
 .welcome{
     background: url(../image/welcome/head-bg.jpg) no-repeat center top / cover;
-    min-height: 653px;
+    height: 100vh;
+    min-height: 652px;
 }
-.welcome__wrap{
-    padding-top: 170px;
+.welcome__container{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    width: 100%;
-    max-width: 583px;
+    justify-content: space-between;
+    height: 100%;
+    padding: 28px 0 66px 0;
 }
 .welcome__content{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin-bottom: 64px;
+    width: 46%;
 }
 .welcome__title{
     font-style: normal;
@@ -33,24 +34,11 @@
     margin-bottom: 39px;
 }
 
-.welcome__footer{
-    display: flex;
-    align-items: center;
-    .welcome__item{
-        width: 142px;
-        display: flex;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 18px;
-        margin-right: 33px;
-        img{
-            width: 35px;
-            height: 35px;
-            margin-right: 14px;
-        }
-    }
-}
+
+
+
+
+
 .dotsbar{
     position: fixed;
     top: 215px;
@@ -62,7 +50,7 @@
     li{
         width: 9px;
         height: 9px;
-        background-color: #fff;
+        background-color: $white;
         border-radius: 50%;
         margin-bottom: 15px;
         list-style-type: none ;
@@ -73,7 +61,7 @@
     width: 19px;
     height: 19px;
     border-radius: 50%;
-    border: 2px solid #FFFFFF;
+    border: 2px solid $white;
     background: transparent;
     padding: 8px;
     margin-bottom: 7px;
