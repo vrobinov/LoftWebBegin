@@ -1,18 +1,6 @@
-.form__section {
-    background: url(../image/form/bg-form.jpeg) no-repeat center top / cover;
-    min-height: 652px;
-}
-.wrap__bg{
-    background-color: #2b2b2b66; 
-    min-height: inherit;   
-    padding: 62px 0 85px 0;
-}
-.form__title-wrap {
-    margin-bottom: 59px;
-}
+
 .form {
     display: flex;
-    justify-content: space-between;
 }
 .form__col {
     flex: 1;
@@ -80,8 +68,9 @@
     &:last-child{
         margin-right: 0px;
     }
-    &--elem{
-        display: none;
+    &__elem{
+        position: absolute;
+        left:-9999px;
         &:checked ~ .radio__visible{
             &::before{
                 display: block;
@@ -122,15 +111,4 @@
 .form__btns {
     display: flex;
 
-}
-.form__btn-reset {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 22px;
-    color: $white;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    margin-left: 22px;
 }

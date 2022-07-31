@@ -108,10 +108,10 @@
 
             </section>
             <!-----------------WELCOME END---------------------->
-            <!-----------------SERVICES START---------------------->
+            <!-----------------BENEFIT START---------------------->
             <section class="section">
                 <div class="container">
-                    <div class="headline">
+                    <div class="head-benefit">
                         <h2 class="section__title section__title--black headline__title">почему Surfboard?</h2>
                         <div class="headline__suptitle">Мы создаем уникальные и качественные доски из прочных и
                             экологичных
@@ -176,53 +176,65 @@
                     </ul>
                 </div>
             </section>
-            <!-----------------SERVICES END---------------------->
+            <!-----------------BENEFIT END---------------------->
             <!-----------------REVIEW START---------------------->
-            <section class="review">
+            <section class="section">
                 <div class="container">
-                    <div class="review__wrap">
-                        <div class="review__title-wrap">
-                            <h2 class="section__title section__title--black">Отзывы</h2>
-                        </div>
-                        <article class="review__box">
-                            <img src="image/review/per-rev-one.jpg" alt="author">
-                            <div class="review__content">
-                                <div class="review__caption-wrap">
-                                    <h3 class="block__caption">Лучший дизайн</h3>
+                    <div class="head-review">
+                        <h2 class="section__title section__title--black">Отзывы</h2>
+                    </div>
+                    <div class="reviews">
+                        <div class="reviews__display">
+                            <div class="reviews__display-inner">
+                                <div class="reviews__avatar">
+                                    <img src="image/review/per-rev-one.jpg" alt="author" class="reviews__avatar-img">
                                 </div>
-                                <div class="review__text">
-                                    Я увидела доски на сайте и влюбилась в их дизайн. К летнему сезону я заказала себе
-                                    доску
-                                    в
-                                    SurfBoard. Дизайнер команды - волшебница! Она учла все мои предпочтения и
-                                    комментарии. В
-                                    итоге получился прекрасный дизайн. А я катаюсь на доске, которая мне нравится)
-                                </div>
-                                <div class="review__name-author">Ольга Макарова</div>
+                                <article class="reviews__content">
+                                    <h3 class="reviews__title">Лучший дизайн</h3>
+                                    <div class="reviews__text">
+                                        <p>
+                                            Я увидела доски на сайте и влюбилась в их дизайн. К летнему сезону я
+                                            заказала
+                                            себе
+                                            доску
+                                            в
+                                            SurfBoard. Дизайнер команды - волшебница! Она учла все мои предпочтения
+                                            и
+                                            комментарии. В
+                                            итоге получился прекрасный дизайн. А я катаюсь на доске, которая мне
+                                            нравится)
+                                        </p>
+                                    </div>
+                                    <div class="reviews__name-author">Ольга Макарова</div>
+                                </article>
                             </div>
-                        </article>
-                        <div class="review__footer">
-                            <ul class="review__list-author">
-                                <a href="#" class="author-active">
-                                    <li><img src="image/review/per-dots-one.png" alt="mini-author"></li>
-                                </a>
-                                <a href="#">
-                                    <li><img src="image/review/per-dots-two.png" alt="mini-author"></li>
-                                </a>
-                                <a href="#">
-                                    <li><img src="image/review/per-dots-three.png" alt="mini-author"></li>
-                                </a>
-                            </ul>
                         </div>
                     </div>
+                    <ul class="reviews__switcher">
+                        <li class="reviews__switcher-item interactive-avatar interactive-avatar--active">
+                            <a href="#" class="interactive-avatar-link"><img src="image/review/per-rev-one.jpg"
+                                    alt="mini-author" class="interactive-avatar-img">
+                            </a>
+                        </li>
+                        <li class="reviews__switcher-item interactive-avatar">
+                            <a href="#" class="interactive-avatar-link"><img src="image/review/per-rev-two.jpg"
+                                    alt="mini-author" class="interactive-avatar-img">
+                            </a>
+                        </li>
+                        <li class="reviews__switcher-item interactive-avatar">
+                            <a href="#" class="interactive-avatar-link"><img src="image/review/per-rev-three.jpg"
+                                    alt="mini-author" class="interactive-avatar-img">
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </section>
             <!-----------------REVIEW END---------------------->
             <!-----------------FORM START---------------------->
-            <section class="form__section">
-                <div class="wrap__bg">
+            <section class="section order-section">
+                <div class="section section--bg">
                     <div class="container">
-                        <div class="form__title-wrap">
+                        <div class="head-form">
                             <h2 class="section__title section__title--white">Закажите доску</h2>
                         </div>
                         <form class="form">
@@ -269,26 +281,26 @@
                                 </label>
                                 <div class="form__controls">
                                     <label class="radio">
-                                        <input type="radio" name="option" class="radio--elem">
+                                        <input type="radio" name="option" class="radio__elem">
                                         <div class="radio__visible"></div>
                                         <div class="form__row-title">Оплата наличными</div>
                                     </label>
                                     <label class="radio">
-                                        <input type="radio" name="option" class="radio--elem">
+                                        <input type="radio" name="option" class="radio__elem">
                                         <div class="radio__visible"></div>
                                         <div class="form__row-title">Оплата по карте</div>
                                     </label>
                                 </div>
                                 <div class="form__controls">
                                     <label class="radio radio--checkbox">
-                                        <input type="checkbox" class="radio--elem">
+                                        <input type="checkbox" class="radio__elem">
                                         <div class="radio__visible"></div>
                                         <div class="form__row-title">Не перезванивать</div>
                                     </label>
                                 </div>
                                 <div class="form__btns">
                                     <input type="submit" value="Заказать" class="button">
-                                    <input type="reset" value="Очистить" class="form__btn-reset">
+                                    <input type="reset" value="Очистить" class="button-reset">
                                 </div>
                             </div>
                         </form>

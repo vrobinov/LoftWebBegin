@@ -1,24 +1,35 @@
 /*
-Error: Undefined variable: "$white".
-        on line 40 of D:\WebDev\LoftBegin\SurfBoardProject\css\form.scss
+Error: Undefined variable: "$yellow".
+        on line 9 of D:\WebDev\LoftBegin\SurfBoardProject\css\interactive-avatar.scss
 
-35: .form__row-title {
-36:     font-style: normal;
-37:     font-weight: 400;
-38:     font-size: 18px;
-39:     line-height: 22px;
-40:     color: $white;
-41: }
-42: .form__row-input {
-43:     width: 100%;
-44:     border:0;
-45:     padding: 18px 12px;
+4:     border: 6px solid transparent;
+5:     border-radius: 50%;
+6:     overflow: hidden;
+7:     position: relative;
+8:     &--active{
+9:         border-color: $yellow;
+10:     }
+11: 
+12: }
+13: .interactive-avatar-link{
+14:     display: block;
 
 Backtrace:
-D:\WebDev\LoftBegin\SurfBoardProject\css\form.scss:40
+D:\WebDev\LoftBegin\SurfBoardProject\css\interactive-avatar.scss:9
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
@@ -62,4 +73,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$white\".\A         on line 40 of D:\WebDev\LoftBegin\SurfBoardProject\css\form.scss\A \A 35: .form__row-title {\A 36:     font-style: normal;\A 37:     font-weight: 400;\A 38:     font-size: 18px;\A 39:     line-height: 22px;\A 40:     color: $white;\A 41: }\A 42: .form__row-input {\A 43:     width: 100%;\A 44:     border:0;\A 45:     padding: 18px 12px;"; }
+  content: "Error: Undefined variable: \"$yellow\".\A         on line 9 of D:\WebDev\LoftBegin\SurfBoardProject\css\interactive-avatar.scss\A \A 4:     border: 6px solid transparent;\A 5:     border-radius: 50%;\A 6:     overflow: hidden;\A 7:     position: relative;\A 8:     &--active{\A 9:         border-color: $yellow;\A 10:     }\A 11: \A 12: }\A 13: .interactive-avatar-link{\A 14:     display: block;"; }

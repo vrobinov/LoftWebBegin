@@ -159,7 +159,6 @@ img {
   border-radius: 100px;
   border: 0;
   padding: 21px 41px;
-  font-style: normal;
   font-weight: 800;
   font-size: 16px;
   line-height: 18px;
@@ -198,6 +197,8 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center; }
+  .section--bg {
+    background-color: #2b2b2b66; }
 
 .section__title {
   font-style: normal;
@@ -211,14 +212,14 @@ img {
   .section__title--white {
     color: #FFFFFF; }
 
-.headline {
+.head-benefit {
   text-align: center;
   margin-bottom: 49px; }
 
-.headline__title {
+.head-benefit__title {
   margin-bottom: 17px; }
 
-.headline__suptitle {
+.head-benefit__suptitle {
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -237,8 +238,6 @@ img {
       content: "";
       position: absolute;
       background: url("../image/services/elips-decor.png") no-repeat;
-      width: 67px;
-      height: 21px;
       left: 252px;
       top: 57px; }
 
@@ -280,36 +279,40 @@ img {
   text-align: center;
   color: #666666; }
 
-.review {
-  background-color: #FFFFFF;
-  padding: 62px 0 63px 0; }
-
-.review__wrap,
-.review__content {
-  display: flex;
-  flex-direction: column; }
-
-.review__title-wrap {
-  margin-bottom: 32px; }
-
-.review__box {
+.reviews__display {
   display: flex;
   justify-content: space-between;
   background: #F8FAF9;
-  padding: 42px;
+  padding: 42px 150px 42px 42px;
   margin-bottom: 15px; }
 
-.review__content {
-  align-items: flex-start;
+.reviews__display-inner {
+  display: flex; }
+
+.reviews__avatar {
+  width: 253px;
+  height: 264px; }
+
+.reviews__avatar-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%; }
+
+.reviews__content {
+  flex: 1;
   margin-left: 38px;
   padding-top: 28px;
   padding-bottom: 6px; }
 
-.review__caption-wrap {
-  margin-bottom: 14px;
-  text-align: left; }
+.reviews__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 32px;
+  color: #292929;
+  margin-bottom: 14px; }
 
-.review__text {
+.reviews__text {
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -317,42 +320,52 @@ img {
   color: #666666;
   margin-bottom: 25px; }
 
-.review__name-author {
+.reviews__name-author {
   font-style: normal;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 18px;
   line-height: 24px;
   color: #292929; }
 
-.review__list-author {
+.reviews__switcher {
   display: flex;
   justify-content: center; }
-  .review__list-author li {
-    margin: 0 6px; }
 
-.author-active {
+.head-review {
+  margin-bottom: 32px; }
+
+.interactive-avatar {
+  width: 74px;
+  height: 74px;
+  border: 6px solid transparent;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative; }
+  .interactive-avatar--active {
+    border-color: #FEDB3F; }
+
+.interactive-avatar-link {
   display: block;
-  border: 6px solid #FEDB3F;
-  border-radius: 50%; }
-  .author-active li {
-    transform: translate(0, 3%);
-    margin: -3px; }
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; }
 
-.form__section {
-  background: url(../image/form/bg-form.jpeg) no-repeat center top/cover;
-  min-height: 652px; }
+.interactive-avatar-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
 
-.wrap__bg {
-  background-color: #2b2b2b66;
-  min-height: inherit;
-  padding: 62px 0 85px 0; }
-
-.form__title-wrap {
+.head-form {
   margin-bottom: 59px; }
 
+.order-section {
+  background: url(../image/form/bg-form.jpeg) no-repeat center top/cover; }
+
 .form {
-  display: flex;
-  justify-content: space-between; }
+  display: flex; }
 
 .form__col {
   flex: 1;
@@ -410,9 +423,10 @@ img {
   margin-bottom: 19px; }
   .radio:last-child {
     margin-right: 0px; }
-  .radio--elem {
-    display: none; }
-    .radio--elem:checked ~ .radio__visible::before {
+  .radio__elem {
+    position: absolute;
+    left: -9999px; }
+    .radio__elem:checked ~ .radio__visible::before {
       display: block; }
   .radio--checkbox .radio__visible {
     border-radius: 4px; }
@@ -441,8 +455,7 @@ img {
 .form__btns {
   display: flex; }
 
-.form__btn-reset {
-  font-style: normal;
+.button-reset {
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;

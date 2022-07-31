@@ -1,26 +1,18 @@
 /*
-Error: Undefined variable: "$yellow".
-        on line 56 of D:\WebDev\LoftBegin\SurfBoardProject\css\review.scss
+Error: Undefined variable: "$white".
+        on line 2 of D:\WebDev\LoftBegin\SurfBoardProject\css\review.scss
 
-51:         margin: 0 6px;
-52:     }
-53: }
-54: .author-active{
-55:     display: block;
-56:     border: 6px solid $yellow;
-57:     border-radius: 50%;
-58:     li{
-59:         transform: translate(0, 3%);
-60:         margin: -3px;
-61:     }
+1: .review {
+2:     background-color: $white;
+3:     padding: 62px 0 63px 0;
+4: }
+5: 
+6: .reviews {
+7:     display: flex;
 
 Backtrace:
-D:\WebDev\LoftBegin\SurfBoardProject\css\review.scss:56
+D:\WebDev\LoftBegin\SurfBoardProject\css\review.scss:2
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/list_literal.rb:75:in `block in _perform'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/list_literal.rb:75:in `map'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/list_literal.rb:75:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
@@ -66,4 +58,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$yellow\".\A         on line 56 of D:\WebDev\LoftBegin\SurfBoardProject\css\review.scss\A \A 51:         margin: 0 6px;\A 52:     }\A 53: }\A 54: .author-active{\A 55:     display: block;\A 56:     border: 6px solid $yellow;\A 57:     border-radius: 50%;\A 58:     li{\A 59:         transform: translate(0, 3%);\A 60:         margin: -3px;\A 61:     }"; }
+  content: "Error: Undefined variable: \"$white\".\A         on line 2 of D:\WebDev\LoftBegin\SurfBoardProject\css\review.scss\A \A 1: .review {\A 2:     background-color: $white;\A 3:     padding: 62px 0 63px 0;\A 4: }\A 5: \A 6: .reviews {\A 7:     display: flex;"; }
