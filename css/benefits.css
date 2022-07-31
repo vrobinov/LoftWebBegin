@@ -1,0 +1,16 @@
+.benefits {
+  display: flex; }
+  .benefits__item {
+    flex: 1;
+    margin: 0 3%;
+    position: relative; }
+    .benefits__item:nth-child(-n+2)::after {
+      content: "";
+      position: absolute;
+      background: url("../image/services/elips-decor.png") no-repeat;
+      left: 252px;
+      top: 57px;
+      width: 67px;
+      height: 21px; }
+
+/*# sourceMappingURL=benefits.css.map */

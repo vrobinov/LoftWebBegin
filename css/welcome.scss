@@ -33,39 +33,3 @@
     line-height: 25px;
     margin-bottom: 39px;
 }
-
-
-
-
-
-
-.dotsbar{
-    position: fixed;
-    top: 215px;
-    right: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    li{
-        width: 9px;
-        height: 9px;
-        background-color: $white;
-        border-radius: 50%;
-        margin-bottom: 15px;
-        list-style-type: none ;
-    }
-}
-.dots-active{
-    display: block;
-    width: 19px;
-    height: 19px;
-    border-radius: 50%;
-    border: 2px solid $white;
-    background: transparent;
-    padding: 8px;
-    margin-bottom: 7px;
-    li{
-        transform: translate(-50%, -50%);
-    }
-}   

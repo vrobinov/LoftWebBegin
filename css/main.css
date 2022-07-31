@@ -126,34 +126,6 @@ img {
   line-height: 25px;
   margin-bottom: 39px; }
 
-.dotsbar {
-  position: fixed;
-  top: 215px;
-  right: 50px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center; }
-  .dotsbar li {
-    width: 9px;
-    height: 9px;
-    background-color: #FFFFFF;
-    border-radius: 50%;
-    margin-bottom: 15px;
-    list-style-type: none; }
-
-.dots-active {
-  display: block;
-  width: 19px;
-  height: 19px;
-  border-radius: 50%;
-  border: 2px solid #FFFFFF;
-  background: transparent;
-  padding: 8px;
-  margin-bottom: 7px; }
-  .dots-active li {
-    transform: translate(-50%, -50%); }
-
 .button {
   background: #FEDB3F;
   border-radius: 100px;
@@ -239,7 +211,9 @@ img {
       position: absolute;
       background: url("../image/services/elips-decor.png") no-repeat;
       left: 252px;
-      top: 57px; }
+      top: 57px;
+      width: 67px;
+      height: 21px; }
 
 .benefit {
   text-align: center; }
@@ -464,5 +438,36 @@ img {
   border: none;
   cursor: pointer;
   margin-left: 22px; }
+
+.dots-bar {
+  position: fixed;
+  top: 35%;
+  right: 3%;
+  z-index: 100; }
+
+.dots-bar__item {
+  list-style-type: none;
+  margin-bottom: 5px; }
+  .dots-bar__item--active .dots-bar__link {
+    border-color: #FFFFFF; }
+
+.dots-bar__link {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  display: block;
+  position: relative; }
+  .dots-bar__link::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    display: block;
+    border-radius: 50%;
+    background: #FFFFFF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
 
 /*# sourceMappingURL=main.css.map */
