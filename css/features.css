@@ -1,0 +1,12 @@
+.features {
+  display: flex; }
+  .features__item {
+    margin-right: 1.833rem; }
+    .features__item:last-child {
+      margin-right: 0; }
+
+@media screen and (max-width: 768px) {
+  .features {
+    display: none; } }
+
+/*# sourceMappingURL=features.css.map */

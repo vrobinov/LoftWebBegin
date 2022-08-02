@@ -1,17 +1,20 @@
 /*
-Error: Undefined variable: "$yellow".
-        on line 2 of D:\WebDev\LoftBegin\SurfBoardProject\css\button.scss
+Error: Undefined variable: "$z-dots".
+        on line 5 of D:\WebDev\LoftBegin\SurfBoardProject\css\dots-bar.scss
 
-1: .button{
-2:     background: $yellow;
-3:     border-radius: 5.555rem;
-4:     border:0;
-5:     padding: 1.166rem 2.277rem;
-6: 
-7:     font-weight: 800;
+1: .dots-bar{
+2:     position: fixed;
+3:     top: 35%;
+4:     right: 3%;
+5:     z-index: $z-dots;
+6: }
+7: 
+8: .dots-bar__item{
+9:     list-style-type: none;
+10:     margin-bottom: 0.277rem;
 
 Backtrace:
-D:\WebDev\LoftBegin\SurfBoardProject\css\button.scss:2
+D:\WebDev\LoftBegin\SurfBoardProject\css\dots-bar.scss:5
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -58,4 +61,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$yellow\".\A         on line 2 of D:\WebDev\LoftBegin\SurfBoardProject\css\button.scss\A \A 1: .button{\A 2:     background: $yellow;\A 3:     border-radius: 5.555rem;\A 4:     border:0;\A 5:     padding: 1.166rem 2.277rem;\A 6: \A 7:     font-weight: 800;"; }
+  content: "Error: Undefined variable: \"$z-dots\".\A         on line 5 of D:\WebDev\LoftBegin\SurfBoardProject\css\dots-bar.scss\A \A 1: .dots-bar{\A 2:     position: fixed;\A 3:     top: 35%;\A 4:     right: 3%;\A 5:     z-index: $z-dots;\A 6: }\A 7: \A 8: .dots-bar__item{\A 9:     list-style-type: none;\A 10:     margin-bottom: 0.277rem;"; }

@@ -11,10 +11,10 @@
     list-style-type: none;
     font-style: normal;
     font-weight: 700;
-    line-height: 30px;
+    line-height: 1.666rem;
 }
 .menu__item{
-    margin-right: 11px;
+    margin-right: 1.22rem;
     &:last-child{
         margin-right: 0;
     }
@@ -22,13 +22,25 @@
 .number-phone{
     font-style: normal;
     font-weight: 700;
-    font-size: 22px;
-    line-height: 18px;
+    font-size: 1.22rem;
+    line-height: 1.125rem;
     display: flex;
     align-items: center;
     &__icon--elem{
-        width: 13px;
-        height: 13px;
-        margin-right: 6px;
+        width: 0.722rem;
+        height: 0.778rem;
+        margin-right: 0.333rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    .header{
+        background-color: #1968B1;
+        padding: 26px 36px;
+    }
+    .menu__list{
+        display: none;
+    }
+    .number-phone{
+        display: none;
     }
 }

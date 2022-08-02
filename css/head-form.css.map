@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,UAAW;EACP,aAAa,EAAE,QAAQ",
+"sources": ["head-form.scss"],
+"names": [],
+"file": "head-form.css"
+}

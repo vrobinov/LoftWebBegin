@@ -1,3 +1,6 @@
+html {
+  font-size: 18px; }
+
 html,
 body {
   height: 100%; }
@@ -12,7 +15,7 @@ body {
 .wrapper {
   position: relative;
   width: 100%;
-  min-width: 960px;
+  min-width: 53.331rem;
   min-height: 100%;
   overflow: hidden; }
 
@@ -25,7 +28,33 @@ img {
   max-width: 100%; }
 
 .container {
-  width: 940px;
+  width: 52.22rem;
   margin: 0 auto; }
+
+@media screen and (max-width: 992px) {
+  html {
+    font-size: 16px; }
+
+  .wrapper {
+    min-width: 0; }
+
+  .container {
+    max-width: 50.63rem;
+    width: auto; } }
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 14px; }
+
+  .wrapper {
+    min-width: 0; }
+
+  .container {
+    width: auto; } }
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 12px; } }
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 10px; } }
 
 /*# sourceMappingURL=basic.css.map */
