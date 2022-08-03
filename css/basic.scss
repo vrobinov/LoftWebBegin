@@ -64,6 +64,7 @@ img{
         min-width: 0;
     }
     .container{
+        max-width: 55.63rem;
         width: auto;
     }
 }
@@ -76,7 +77,7 @@ img{
 
 @media screen and (max-width: 320px) {
     html{
-        font-size: 10px;
+        font-size: 9px;
     }
 }
 

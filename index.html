@@ -38,6 +38,8 @@
                             </span>
                             <span class="number-phone__text">8 800 903 90 90</span>
                         </a>
+                        <div class="burger-menu"><img src="icons/burger-icon.svg" alt="burger" class="burger-menu__img">
+                        </div>
                     </header>
                     <!-----------------HEADER END---------------------->
                     <div class="welcome__content">
@@ -181,18 +183,18 @@
                     </div>
                     <ul class="reviews__switcher">
                         <li class="reviews__switcher-item interactive-avatar interactive-avatar--active">
-                            <a href="#" class="interactive-avatar-link"><img src="image/review/per-rev-one.jpg"
-                                    alt="mini-author" class="interactive-avatar-img">
+                            <a href="#" class="interactive-avatar__link"><img src="image/review/per-rev-one.jpg"
+                                    alt="mini-author" class="interactive-avatar__img">
                             </a>
                         </li>
                         <li class="reviews__switcher-item interactive-avatar">
-                            <a href="#" class="interactive-avatar-link"><img src="image/review/per-rev-two.jpg"
-                                    alt="mini-author" class="interactive-avatar-img">
+                            <a href="#" class="interactive-avatar__link"><img src="image/review/per-rev-two.jpg"
+                                    alt="mini-author" class="interactive-avatar__img">
                             </a>
                         </li>
                         <li class="reviews__switcher-item interactive-avatar">
-                            <a href="#" class="interactive-avatar-link"><img src="image/review/per-rev-three.jpg"
-                                    alt="mini-author" class="interactive-avatar-img">
+                            <a href="#" class="interactive-avatar__link"><img src="image/review/per-rev-three.jpg"
+                                    alt="mini-author" class="interactive-avatar__img">
                             </a>
                         </li>
                     </ul>
@@ -201,82 +203,122 @@
             <!-----------------REVIEW END---------------------->
             <!-----------------FORM START---------------------->
             <section class="section order-section">
-                <div class="section section--bg">
-                    <div class="container">
-                        <div class="head-form">
-                            <h2 class="section__title section__title--white">Закажите доску</h2>
-                        </div>
-                        <form class="form">
-                            <div class="form__col">
-                                <div class="form__row">
-                                    <label class="form__block">
-                                        <div class="form__row-title">Имя</div>
-                                        <input type="text" class="form__row-input">
-                                    </label>
-                                    <label class="form__block">
-                                        <div class="form__row-title">Телефон</div>
-                                        <input type="number" class="form__row-input">
-                                    </label>
-                                </div>
-                                <div class="form__row">
-                                    <label class="form__block">
-                                        <div class="form__row-title">Улица</div>
-                                        <input type="text" class="form__row-input">
-                                    </label>
-                                </div>
-                                <div class="form__row">
-                                    <label class="form__block form__block--small">
-                                        <div class="form__row-title">Дом</div>
-                                        <input type="text" class="form__row-input">
-                                    </label>
-                                    <label class="form__block form__block--small">
-                                        <div class="form__row-title">Корпус</div>
-                                        <input type="text" class="form__row-input">
-                                    </label>
-                                    <label class="form__block form__block--small">
-                                        <div class="form__row-title">Квартира</div>
-                                        <input type="text" class="form__row-input">
-                                    </label>
-                                    <label class="form__block form__block--small">
-                                        <div class="form__row-title">Этаж</div>
-                                        <input type="text" class="form__row-input">
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="form__col">
-                                <label class="form__block form__block--textarea">
-                                    <div class="form__row-title">Комментарий</div>
-                                    <textarea class="form__row-input form__row-input--textarea"></textarea>
-                                </label>
-                                <div class="form__controls">
-                                    <label class="radio">
-                                        <input type="radio" name="option" class="radio__elem">
-                                        <div class="radio__visible"></div>
-                                        <div class="form__row-title">Оплата наличными</div>
-                                    </label>
-                                    <label class="radio">
-                                        <input type="radio" name="option" class="radio__elem">
-                                        <div class="radio__visible"></div>
-                                        <div class="form__row-title">Оплата по карте</div>
-                                    </label>
-                                </div>
-                                <div class="form__controls">
-                                    <label class="radio radio--checkbox">
-                                        <input type="checkbox" class="radio__elem">
-                                        <div class="radio__visible"></div>
-                                        <div class="form__row-title">Не перезванивать</div>
-                                    </label>
-                                </div>
-                                <div class="form__btns">
-                                    <input type="submit" value="Заказать" class="button">
-                                    <input type="reset" value="Очистить" class="button-reset">
-                                </div>
-                            </div>
-                        </form>
+                <div class="container">
+                    <div class="head-form">
+                        <h2 class="section__title section__title--white">Закажите доску</h2>
                     </div>
+                    <form class="form">
+                        <div class="form__col">
+                            <div class="form__row">
+                                <label class="form__block">
+                                    <div class="form__row-title">Имя</div>
+                                    <input type="text" class="form__row-input">
+                                </label>
+                                <label class="form__block">
+                                    <div class="form__row-title">Телефон</div>
+                                    <input type="number" class="form__row-input">
+                                </label>
+                            </div>
+                            <div class="form__row">
+                                <label class="form__block">
+                                    <div class="form__row-title">Улица</div>
+                                    <input type="text" class="form__row-input">
+                                </label>
+                            </div>
+                            <div class="form__row">
+                                <label class="form__block form__block--small">
+                                    <div class="form__row-title">Дом</div>
+                                    <input type="text" class="form__row-input">
+                                </label>
+                                <label class="form__block form__block--small">
+                                    <div class="form__row-title">Корпус</div>
+                                    <input type="text" class="form__row-input">
+                                </label>
+                                <label class="form__block form__block--small">
+                                    <div class="form__row-title">Квартира</div>
+                                    <input type="text" class="form__row-input">
+                                </label>
+                                <label class="form__block form__block--small">
+                                    <div class="form__row-title">Этаж</div>
+                                    <input type="text" class="form__row-input">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form__col">
+                            <label class="form__block form__block--textarea">
+                                <div class="form__row-title">Комментарий</div>
+                                <textarea class="form__row-input form__row-input--textarea"></textarea>
+                            </label>
+                            <div class="form__controls">
+                                <label class="radio">
+                                    <input type="radio" name="option" class="radio__elem">
+                                    <div class="radio__visible"></div>
+                                    <div class="form__row-title">Оплата наличными</div>
+                                </label>
+                                <label class="radio">
+                                    <input type="radio" name="option" class="radio__elem">
+                                    <div class="radio__visible"></div>
+                                    <div class="form__row-title">Оплата по карте</div>
+                                </label>
+                            </div>
+                            <div class="form__controls">
+                                <label class="radio radio--checkbox">
+                                    <input type="checkbox" class="radio__elem">
+                                    <div class="radio__visible"></div>
+                                    <div class="form__row-title">Не перезванивать</div>
+                                </label>
+                            </div>
+                            <div class="form__btns">
+                                <input type="submit" value="Заказать" class="button">
+                                <input type="reset" value="Очистить" class="button-reset">
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </section>
             <!-----------------FORM END---------------------->
+            <!-----------------MAP START---------------------->
+            <section class="section map">
+            </section>
+            <!-----------------MAP END---------------------->
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer__wrap">
+                        <address class="footer__address">
+                            <span class="footer__text">Москва, ул.Новый Арбат, д.31/12</span>
+                            <a href="tel: 88009039090" class="number-phone">
+                                <span class="number-phone__icon">
+                                    <img src="icons/footer-phone.svg" alt="phone" class="number-phone__icon--elem">
+                                </span>
+                                <span class="number-phone__text--black">8 800 903 90 90</span>
+                            </a>
+                        </address>
+                        <ul class="socials">
+                            <li class="socials__item">
+                                <a href="#" class="socials__link">
+                                    <svg class="socials__icon">
+                                        <use xlink:href="icons/sprite.svg#vk"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="socials__item">
+                                <a href="#" class="socials__link">
+                                    <svg class="socials__icon">
+                                        <use xlink:href="icons/sprite.svg#fb"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="socials__item">
+                                <a href="#" class="socials__link">
+                                    <svg class="socials__icon">
+                                        <use xlink:href="icons/sprite.svg#tw"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
         </div>
         <!-----------------MAINCONTENT END---------------------->
     </div>

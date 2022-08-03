@@ -43,8 +43,8 @@
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-    padding: 0 30px;
     margin: 0;
+    padding: 0;
     width: 100%; }
 
   .welcome__content {
@@ -52,7 +52,8 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 3.555rem;
-    width: 100%; }
+    width: 100%;
+    padding: 0 51px; }
 
   .welcome__title {
     text-align: center; } }

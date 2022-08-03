@@ -1,0 +1,19 @@
+.number-phone {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.22rem;
+  line-height: 1.125rem;
+  display: flex;
+  align-items: center; }
+  .number-phone__text--black {
+    color: #292929; }
+  .number-phone__icon--elem {
+    width: 0.722rem;
+    height: 0.778rem;
+    margin-right: 0.333rem; }
+
+@media screen and (max-width: 768px) {
+  .number-phone {
+    display: none; } }
+
+/*# sourceMappingURL=number-phone.css.map */

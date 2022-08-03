@@ -19,18 +19,10 @@
         margin-right: 0;
     }
 }
-.number-phone{
-    font-style: normal;
-    font-weight: 700;
-    font-size: 1.22rem;
-    line-height: 1.125rem;
-    display: flex;
-    align-items: center;
-    &__icon--elem{
-        width: 0.722rem;
-        height: 0.778rem;
-        margin-right: 0.333rem;
-    }
+
+.burger-menu{
+    cursor:pointer;
+    display: none;
 }
 @media screen and (max-width: 768px) {
     .header{
@@ -40,7 +32,7 @@
     .menu__list{
         display: none;
     }
-    .number-phone{
-        display: none;
-    }
+    .burger-menu{
+    display: block;
+}
 }

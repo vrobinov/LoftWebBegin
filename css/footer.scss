@@ -1,0 +1,25 @@
+.footer{
+    background-color: $white;
+    padding: 1.333rem 0 1.125rem 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+}
+.footer__wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.address{
+    display: flex;
+    flex-direction: column;
+}
+.footer__text{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.166rem;
+    line-height: 1.333rem;
+    color: #292929;
+}

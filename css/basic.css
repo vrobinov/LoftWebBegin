@@ -49,12 +49,13 @@ img {
     min-width: 0; }
 
   .container {
+    max-width: 55.63rem;
     width: auto; } }
 @media screen and (max-width: 480px) {
   html {
     font-size: 12px; } }
 @media screen and (max-width: 320px) {
   html {
-    font-size: 10px; } }
+    font-size: 9px; } }
 
 /*# sourceMappingURL=basic.css.map */
