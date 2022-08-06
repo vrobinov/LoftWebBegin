@@ -15,7 +15,6 @@ body {
 .wrapper {
   position: relative;
   width: 100%;
-  min-width: 53.331rem;
   min-height: 100%;
   overflow: hidden; }
 
@@ -28,7 +27,8 @@ img {
   max-width: 100%; }
 
 .container {
-  width: 52.22rem;
+  width: 95%;
+  max-width: 940px;
   margin: 0 auto; }
 
 @media screen and (max-width: 992px) {

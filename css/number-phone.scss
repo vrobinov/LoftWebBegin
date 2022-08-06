@@ -5,6 +5,9 @@
     line-height: 1.125rem;
     display: flex;
     align-items: center;
+    &__text{
+        white-space: nowrap;
+    }
     &__text--black{
         color: #292929;
     }
@@ -12,13 +15,28 @@
         width: 0.722rem;
         height: 0.778rem;
         margin-right: 0.333rem;
+        flex-shrink: 0;
+        &--white{
+            fill: $white;   
+        }
+        
     }
-}
-
-@media screen and (max-width: 768px) {
-
-    .number-phone{
+    @include tablets{
         display: none;
     }
-
+    &--foot{
+    @include tablets{
+    display: inline-block;
+    }
+    }
 }
+
+// @media screen and (max-width: 768px) {
+
+//     .number-phone{
+//         display: none;
+//         &--foot{
+//             display: inline-block;
+//         }
+//     }
+// }

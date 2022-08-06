@@ -1,5 +1,8 @@
 .features{
     display: flex;
+    @include tablets{
+        display: none;
+    }
     &__item{
         margin-right: 1.833rem;
         &:last-child{
@@ -7,8 +10,8 @@
         }
     }
 }
-@media screen and (max-width: 768px) {
-    .features{
-        display: none;
-    }
-}
+// @media screen and (max-width: 768px) {
+//     .features{
+//         display: none;
+//     }
+// }

@@ -1,28 +1,35 @@
 /*
-Error: Undefined mixin 'tablets'.
-        on line 6 of D:\WebDev\LoftBegin\SurfBoardProject\css\welcome.scss, in `tablets'
-        from line 6 of D:\WebDev\LoftBegin\SurfBoardProject\css\welcome.scss
+Error: Undefined variable: "$white".
+        on line 21 of D:\WebDev\LoftBegin\SurfBoardProject\css\fullscreen-menu.scss
 
-1: 
-2: .welcome{
-3:     background: url(../image/welcome/head-bg.jpg) no-repeat center top / cover;
-4:     height: 100vh;
-5:     min-height: 36.2rem;
-6:     @include tablets{
-7:         background: url(../image/welcome/head-bg.jpg) no-repeat top right;
-8:         height: 100vh;
-9:         background-size: cover ;
-10:     }
-11:     @include phones{
+16:         position: absolute;
+17:         top: 2.333rem;
+18:         right: 2.333rem;
+19:     }
+20:     &__icon{
+21:         fill: $white;
+22:         width: 1.111rem;
+23:         height: 1.111rem;
+24:     }
+25:     &.open{
+26:         left:0;
 
 Backtrace:
-D:\WebDev\LoftBegin\SurfBoardProject\css\welcome.scss:6:in `tablets'
-D:\WebDev\LoftBegin\SurfBoardProject\css\welcome.scss:6
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
+D:\WebDev\LoftBegin\SurfBoardProject\css\fullscreen-menu.scss:21
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `with_mixin'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:350:in `visit_mixin'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
@@ -66,4 +73,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'tablets'.\A         on line 6 of D:\WebDev\LoftBegin\SurfBoardProject\css\welcome.scss, in `tablets'\A         from line 6 of D:\WebDev\LoftBegin\SurfBoardProject\css\welcome.scss\A \A 1: \A 2: .welcome{\A 3:     background: url(../image/welcome/head-bg.jpg) no-repeat center top / cover;\A 4:     height: 100vh;\A 5:     min-height: 36.2rem;\A 6:     @include tablets{\A 7:         background: url(../image/welcome/head-bg.jpg) no-repeat top right;\A 8:         height: 100vh;\A 9:         background-size: cover ;\A 10:     }\A 11:     @include phones{"; }
+  content: "Error: Undefined variable: \"$white\".\A         on line 21 of D:\WebDev\LoftBegin\SurfBoardProject\css\fullscreen-menu.scss\A \A 16:         position: absolute;\A 17:         top: 2.333rem;\A 18:         right: 2.333rem;\A 19:     }\A 20:     &__icon{\A 21:         fill: $white;\A 22:         width: 1.111rem;\A 23:         height: 1.111rem;\A 24:     }\A 25:     &.open{\A 26:         left:0;"; }

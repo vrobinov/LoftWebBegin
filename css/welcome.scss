@@ -3,6 +3,17 @@
     background: url(../image/welcome/head-bg.jpg) no-repeat center top / cover;
     height: 100vh;
     min-height: 36.2rem;
+    @include tablets{
+        background: url(../image/welcome/head-bg.jpg) no-repeat top right;
+        height: 100vh;
+        background-size: cover ;
+    }
+    @include phones{
+        background: url(../image/welcome/head-bg.jpg) no-repeat right;
+        height: 100vh;
+        background-size: cover;
+        background-position: right 20% bottom ;
+    }
 }
 .welcome__container{
     display: flex;
@@ -10,6 +21,15 @@
     justify-content: space-between;
     height: 100%;
     padding: 1.55rem 0 3.666rem 0;
+    @include tablets{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
 }
 .welcome__content{
     display: flex;
@@ -17,6 +37,14 @@
     align-items: flex-start;
     margin-bottom: 3.555rem;
     width: 46%;
+    @include tablets{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 3.555rem;
+        width: 100%;
+        padding: 0 2.833rem;
+    }
 }
 .welcome__title{
     font-style: normal;
@@ -25,6 +53,9 @@
     line-height: 3.222rem;
     text-transform: uppercase;
     margin-bottom: 0.944rem;
+    @include tablets{
+        text-align: center;
+    }
 }
 .welcome__text{
     font-style: normal;
@@ -33,39 +64,39 @@
     line-height: 1.388rem;
     margin-bottom: 2.166rem;
 }
-@media screen and (max-width: 768px) {
-    .welcome{
-    background: url(../image/welcome/head-bg.jpg) no-repeat top right;
-    height: 100vh;
-    background-size: cover ;
-}
-    .welcome__container{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-}
-    .welcome__content{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 3.555rem;
-    width: 100%;
-    padding: 0 51px;
-}
-    .welcome__title{
-        text-align: center;
-    }
-}
+// @media screen and (max-width: 768px) {
+//     .welcome{
+//     background: url(../image/welcome/head-bg.jpg) no-repeat top right;
+//     height: 100vh;
+//     background-size: cover ;
+// }
+//     .welcome__container{
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-between;
+//     height: 100%;
+//     margin: 0;
+//     padding: 0;
+//     width: 100%;
+// }
+//     .welcome__content{
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     margin-bottom: 3.555rem;
+//     width: 100%;
+//     padding: 0 2.833rem;
+// }
+//     .welcome__title{
+//         text-align: center;
+//     }
+// }
 
-@media screen and (max-width: 480px) {
-    .welcome{
-    background: url(../image/welcome/head-bg.jpg) no-repeat right;
-    height: 100vh;
-    background-size: cover ;
-}
+// @media screen and (max-width: 480px) {
+//     .welcome{
+//     background: url(../image/welcome/head-bg.jpg) no-repeat right;
+//     height: 100vh;
+//     background-size: cover ;
+// }
 
-}
+// }

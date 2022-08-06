@@ -34,12 +34,17 @@
                         </nav>
                         <a href="tel: 88009039090" class="number-phone">
                             <span class="number-phone__icon">
-                                <img src="icons/phone.svg" alt="phone" class="number-phone__icon--elem">
+                                <svg class="number-phone__icon--elem number-phone__icon--elem--white">
+                                    <use href="icons/sprite.svg#head-phone"></use>
+                                </svg>
                             </span>
                             <span class="number-phone__text">8 800 903 90 90</span>
                         </a>
-                        <div class="burger-menu"><img src="icons/burger-icon.svg" alt="burger" class="burger-menu__img">
-                        </div>
+                        <a href="#" class="burger-menu" data-menu="open">
+                            <svg class="burger-menu__img">
+                                <use href="icons/sprite.svg#burger"></use>
+                            </svg>
+                        </a>
                     </header>
                     <!-----------------HEADER END---------------------->
                     <div class="welcome__content">
@@ -51,25 +56,25 @@
                     <div class="welcome__footer">
                         <ul class="features">
                             <li class="features__item feature">
-                                <div class="feature__icon">
-                                    <img src="icons/surf.svg" alt="board">
-                                </div>
+                                <svg class="feature__icon">
+                                    <use href="icons/sprite.svg#surf"></use>
+                                </svg>
                                 <div class="feature__text">
                                     Уникальный дизайн
                                 </div>
                             </li>
                             <li class="features__item feature">
-                                <div class="feature__icon">
-                                    <img src="icons/saw.svg" alt="saw">
-                                </div>
+                                <svg class="feature__icon">
+                                    <use href="icons/sprite.svg#saw"></use>
+                                </svg>
                                 <div class="feature__text">
                                     Прочные материалы
                                 </div>
                             </li>
                             <li class="features__item feature">
-                                <div class="feature__icon">
-                                    <img src="icons/deliveri.svg" alt="car">
-                                </div>
+                                <svg class="feature__icon">
+                                    <use href="icons/sprite.svg#deliveri"></use>
+                                </svg>
                                 <div class="feature__text">
                                     Быстрая доставка
                                 </div>
@@ -93,7 +98,9 @@
                         <li class="benefits__item benefit">
                             <div class="benefit__image">
                                 <div class="benefit__image-wrap">
-                                    <img src="image/services/perfect.svg" alt="perfect" class="benefit__icon">
+                                    <svg class="benefit__icon">
+                                        <use href="icons/sprite.svg#perfect"></use>
+                                    </svg>
                                 </div>
                             </div>
                             <div class="benefit__text">
@@ -110,7 +117,9 @@
                         <li class="benefits__item benefit">
                             <div class="benefit__image">
                                 <div class="benefit__image-wrap">
-                                    <img src="image/services/strong.svg" alt="strong" class="benefit__icon">
+                                    <svg class="benefit__icon">
+                                        <use href="icons/sprite.svg#strong"></use>
+                                    </svg>
                                 </div>
                             </div>
                             <div class="benefit__text">
@@ -129,7 +138,9 @@
                         <li class="benefits__item benefit">
                             <div class="benefit__image">
                                 <div class="benefit__image-wrap">
-                                    <img src="image/services/unique.svg" alt="unique" class="benefit__icon">
+                                    <svg class="benefit__icon">
+                                        <use href="icons/sprite.svg#unique"></use>
+                                    </svg>
                                 </div>
                             </div>
                             <div class="benefit__text">
@@ -286,9 +297,11 @@
                     <div class="footer__wrap">
                         <address class="footer__address">
                             <span class="footer__text">Москва, ул.Новый Арбат, д.31/12</span>
-                            <a href="tel: 88009039090" class="number-phone">
+                            <a href="tel: 88009039090" class="number-phone number-phone--foot">
                                 <span class="number-phone__icon">
-                                    <img src="icons/footer-phone.svg" alt="phone" class="number-phone__icon--elem">
+                                    <svg class="number-phone__icon--elem">
+                                        <use href="icons/sprite.svg#foot-phone"></use>
+                                    </svg>
                                 </span>
                                 <span class="number-phone__text--black">8 800 903 90 90</span>
                             </a>
@@ -297,24 +310,27 @@
                             <li class="socials__item">
                                 <a href="#" class="socials__link">
                                     <svg class="socials__icon">
-                                        <use xlink:href="icons/sprite.svg#vk"></use>
+                                        <use href="icons/sprite.svg#vk"></use>
                                     </svg>
                                 </a>
                             </li>
                             <li class="socials__item">
                                 <a href="#" class="socials__link">
                                     <svg class="socials__icon">
-                                        <use xlink:href="icons/sprite.svg#fb"></use>
+                                        <use href="icons/sprite.svg#fb"></use>
                                     </svg>
                                 </a>
                             </li>
                             <li class="socials__item">
                                 <a href="#" class="socials__link">
                                     <svg class="socials__icon">
-                                        <use xlink:href="icons/sprite.svg#tw"></use>
+                                        <use href="icons/sprite.svg#tw"></use>
                                     </svg>
                                 </a>
                             </li>
+
+
+
                         </ul>
                     </div>
                 </div>
@@ -338,6 +354,29 @@
         </ul>
     </nav>
     <!-----------------DOTSBAR END---------------------->
+
+    <!-----------------FULLSCREEN-MENU START---------------------->
+    <div class="fullscreen-menu" id="burger-menu">
+        <button class="fullscreen-menu__close" data-menu="close">
+            <svg class="fullscreen-menu__icon">
+                <use href="icons/sprite.svg#burger-close"></use>
+            </svg>
+        </button>
+
+        <nav class="menu menu--column">
+            <ul class="menu__list">
+                <li class="menu__item"><a href="#" class="menu__link">О нас</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">Серфборды</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">Команда</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">Меню</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">Отзывы</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">Как мы работаем</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-----------------FULLSCREEN-MENU END---------------------->
+    <script src="js/burger-menu.js"></script>
 </body>
 
 </html>

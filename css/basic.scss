@@ -2,10 +2,14 @@
 //Здесь буду прописывать базовый стили, а также переменные и миксины
 $yellow:#FEDB3F;
 $white:#FFFFFF;
-$containerWidth: 52.22rem;
+$containerWidth: 940px;
 $container992: 50.63rem;
 $fontSize: 1.125rem;
 $z-dots: 100;
+
+//breakpoints
+$tablets: 768px;
+$phones: 480px;
 
 html{
     font-size: 18px;
@@ -24,7 +28,7 @@ body {
 .wrapper{
     position: relative;
     width: 100%;
-    min-width: $containerWidth + 1.111rem;
+    // min-width: $containerWidth + 1.111rem;
     min-height: 100%;
     overflow: hidden;
 }
@@ -37,7 +41,8 @@ img{
     max-width: 100%;
 }
 .container {
-    width: $containerWidth;
+    width: 95%;
+    max-width: $containerWidth;
     margin: 0 auto;
 }
 

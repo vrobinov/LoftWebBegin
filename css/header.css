@@ -1,24 +1,27 @@
 /*
-Error: Undefined variable: "$fontSize".
-        on line 10 of D:\WebDev\LoftBegin\SurfBoardProject\css\header.scss
+Error: Undefined mixin 'tablets'.
+        on line 5 of D:\WebDev\LoftBegin\SurfBoardProject\css\header.scss, in `tablets'
+        from line 5 of D:\WebDev\LoftBegin\SurfBoardProject\css\header.scss
 
-5: }
-6: .menu__list{
-7:     display: flex;
-8:     justify-content: space-between;
-9:     align-items: center;
-10:     font-size: $fontSize;
-11:     list-style-type: none;
-12:     font-style: normal;
-13:     font-weight: 700;
-14:     line-height: 1.666rem;
-15: }
+1: .header{
+2:     display: flex;
+3:     justify-content: space-between;
+4:     align-items: center;
+5:     @include tablets{
+6:     background-color: #1968B1;
+7:     padding: 26px 36px;
+8:     }
+9: }
+10: .menu__list{
 
 Backtrace:
-D:\WebDev\LoftBegin\SurfBoardProject\css\header.scss:10
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
+D:\WebDev\LoftBegin\SurfBoardProject\css\header.scss:5:in `tablets'
+D:\WebDev\LoftBegin\SurfBoardProject\css\header.scss:5
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `with_mixin'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:350:in `visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
@@ -62,4 +65,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$fontSize\".\A         on line 10 of D:\WebDev\LoftBegin\SurfBoardProject\css\header.scss\A \A 5: }\A 6: .menu__list{\A 7:     display: flex;\A 8:     justify-content: space-between;\A 9:     align-items: center;\A 10:     font-size: $fontSize;\A 11:     list-style-type: none;\A 12:     font-style: normal;\A 13:     font-weight: 700;\A 14:     line-height: 1.666rem;\A 15: }"; }
+  content: "Error: Undefined mixin 'tablets'.\A         on line 5 of D:\WebDev\LoftBegin\SurfBoardProject\css\header.scss, in `tablets'\A         from line 5 of D:\WebDev\LoftBegin\SurfBoardProject\css\header.scss\A \A 1: .header{\A 2:     display: flex;\A 3:     justify-content: space-between;\A 4:     align-items: center;\A 5:     @include tablets{\A 6:     background-color: #1968B1;\A 7:     padding: 26px 36px;\A 8:     }\A 9: }\A 10: .menu__list{"; }

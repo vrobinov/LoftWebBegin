@@ -47,7 +47,6 @@ body {
 .wrapper {
   position: relative;
   width: 100%;
-  min-width: 53.331rem;
   min-height: 100%;
   overflow: hidden; }
 
@@ -60,7 +59,8 @@ img {
   max-width: 100%; }
 
 .container {
-  width: 52.22rem;
+  width: 95%;
+  max-width: 940px;
   margin: 0 auto; }
 
 @media screen and (max-width: 992px) {
@@ -93,6 +93,10 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center; }
+  @media screen and (max-width: 768px) {
+    .header {
+      background-color: #1968B1;
+      padding: 26px 36px; } }
 
 .menu__list {
   display: flex;
@@ -103,26 +107,44 @@ img {
   font-style: normal;
   font-weight: 700;
   line-height: 1.666rem; }
+  @media screen and (max-width: 768px) {
+    .menu__list {
+      display: none; } }
 
 .menu__item {
   margin-right: 1.22rem; }
   .menu__item:last-child {
     margin-right: 0; }
 
+.menu__link {
+  white-space: nowrap; }
+
 .burger-menu {
   cursor: pointer;
   display: none; }
+  @media screen and (max-width: 768px) {
+    .burger-menu {
+      display: block; } }
+  @media screen and (max-width: 768px) {
+    .burger-menu__img {
+      width: 26px;
+      height: 23px;
+      fill: #FFFFFF; } }
 
-@media screen and (max-width: 768px) {
-  .header {
-    background-color: #1968B1;
-    padding: 26px 36px; }
+.menu--column .menu__list {
+  display: block;
+  flex-direction: column;
+  align-items: center; }
+.menu--column .menu__item {
+  margin-bottom: 1.111rem; }
+  .menu--column .menu__item:last-child {
+    margin-bottom: 0; }
+.menu--column .menu__link {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 4rem;
+  text-align: center; }
 
-  .menu__list {
-    display: none; }
-
-  .burger-menu {
-    display: block; } }
 .number-phone {
   font-style: normal;
   font-weight: 700;
@@ -130,20 +152,39 @@ img {
   line-height: 1.125rem;
   display: flex;
   align-items: center; }
+  .number-phone__text {
+    white-space: nowrap; }
   .number-phone__text--black {
     color: #292929; }
   .number-phone__icon--elem {
     width: 0.722rem;
     height: 0.778rem;
-    margin-right: 0.333rem; }
+    margin-right: 0.333rem;
+    flex-shrink: 0; }
+    .number-phone__icon--elem--white {
+      fill: #FFFFFF; }
+  @media screen and (max-width: 768px) {
+    .number-phone {
+      display: none; } }
+  @media screen and (max-width: 768px) {
+    .number-phone--foot {
+      display: inline-block; } }
 
-@media screen and (max-width: 768px) {
-  .number-phone {
-    display: none; } }
 .welcome {
   background: url(../image/welcome/head-bg.jpg) no-repeat center top/cover;
   height: 100vh;
   min-height: 36.2rem; }
+  @media screen and (max-width: 768px) {
+    .welcome {
+      background: url(../image/welcome/head-bg.jpg) no-repeat top right;
+      height: 100vh;
+      background-size: cover; } }
+  @media screen and (max-width: 480px) {
+    .welcome {
+      background: url(../image/welcome/head-bg.jpg) no-repeat right;
+      height: 100vh;
+      background-size: cover;
+      background-position: right 20% bottom; } }
 
 .welcome__container {
   display: flex;
@@ -151,6 +192,15 @@ img {
   justify-content: space-between;
   height: 100%;
   padding: 1.55rem 0 3.666rem 0; }
+  @media screen and (max-width: 768px) {
+    .welcome__container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      width: 100%; } }
 
 .welcome__content {
   display: flex;
@@ -158,6 +208,14 @@ img {
   align-items: flex-start;
   margin-bottom: 3.555rem;
   width: 46%; }
+  @media screen and (max-width: 768px) {
+    .welcome__content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 3.555rem;
+      width: 100%;
+      padding: 0 2.833rem; } }
 
 .welcome__title {
   font-style: normal;
@@ -166,6 +224,9 @@ img {
   line-height: 3.222rem;
   text-transform: uppercase;
   margin-bottom: 0.944rem; }
+  @media screen and (max-width: 768px) {
+    .welcome__title {
+      text-align: center; } }
 
 .welcome__text {
   font-style: normal;
@@ -174,36 +235,6 @@ img {
   line-height: 1.388rem;
   margin-bottom: 2.166rem; }
 
-@media screen and (max-width: 768px) {
-  .welcome {
-    background: url(../image/welcome/head-bg.jpg) no-repeat top right;
-    height: 100vh;
-    background-size: cover; }
-
-  .welcome__container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    width: 100%; }
-
-  .welcome__content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 3.555rem;
-    width: 100%;
-    padding: 0 51px; }
-
-  .welcome__title {
-    text-align: center; } }
-@media screen and (max-width: 480px) {
-  .welcome {
-    background: url(../image/welcome/head-bg.jpg) no-repeat right;
-    height: 100vh;
-    background-size: cover; } }
 .button {
   background: #FEDB3F;
   border-radius: 5.555rem;
@@ -221,21 +252,22 @@ img {
 
 .features {
   display: flex; }
+  @media screen and (max-width: 768px) {
+    .features {
+      display: none; } }
   .features__item {
     margin-right: 1.833rem; }
     .features__item:last-child {
       margin-right: 0; }
 
-@media screen and (max-width: 768px) {
-  .features {
-    display: none; } }
 .feature {
   display: flex; }
 
 .feature__icon {
   width: 1.944rem;
   height: 1.944rem;
-  margin-right: 0.777rem; }
+  margin-right: 0.777rem;
+  fill: #FFFFFF; }
 
 .feature__text {
   font-style: normal;
@@ -609,5 +641,30 @@ img {
   .socials__link {
     width: 100%;
     height: 100%; }
+
+.fullscreen-menu {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  background-color: #313131;
+  display: flex;
+  justify-content: center;
+  padding-top: 7.5rem;
+  transition: .5s; }
+  .fullscreen-menu__close {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 2.333rem;
+    right: 2.333rem; }
+  .fullscreen-menu__icon {
+    fill: #FFFFFF;
+    width: 1.111rem;
+    height: 1.111rem; }
+  .fullscreen-menu.open {
+    left: 0; }
 
 /*# sourceMappingURL=main.css.map */
