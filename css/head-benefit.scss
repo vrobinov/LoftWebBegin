@@ -13,4 +13,7 @@
     text-align: center;
     color: #666666;
     padding: 0 26%;
+    @include phones {
+        padding: 0;
+    }
 }

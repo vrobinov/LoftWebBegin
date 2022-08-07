@@ -11,10 +11,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include phones {
+        flex-direction: column;
+    }
 }
-.address{
+.footer__address{
     display: flex;
     flex-direction: column;
+    @include phones {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 .footer__text{
     font-style: normal;
@@ -22,4 +29,7 @@
     font-size: 1.166rem;
     line-height: 1.333rem;
     color: #292929;
+        @include phones {
+            margin-bottom: 0.666rem;
+    }
 }

@@ -12,7 +12,7 @@ Error: Undefined variable: "$fontSize".
 13:     text-align: center;
 14:     color: #666666;
 15:     padding: 0 26%;
-16: }
+16:     @include phones {
 
 Backtrace:
 D:\WebDev\LoftBegin\SurfBoardProject\css\head-benefit.scss:11
@@ -62,4 +62,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$fontSize\".\A         on line 11 of D:\WebDev\LoftBegin\SurfBoardProject\css\head-benefit.scss\A \A 6:     margin-bottom: 0.944rem;\A 7: }\A 8: .head-benefit__suptitle {\A 9:     font-style: normal;\A 10:     font-weight: 400;\A 11:     font-size: $fontSize;\A 12:     line-height: 1.222rem;\A 13:     text-align: center;\A 14:     color: #666666;\A 15:     padding: 0 26%;\A 16: }"; }
+  content: "Error: Undefined variable: \"$fontSize\".\A         on line 11 of D:\WebDev\LoftBegin\SurfBoardProject\css\head-benefit.scss\A \A 6:     margin-bottom: 0.944rem;\A 7: }\A 8: .head-benefit__suptitle {\A 9:     font-style: normal;\A 10:     font-weight: 400;\A 11:     font-size: $fontSize;\A 12:     line-height: 1.222rem;\A 13:     text-align: center;\A 14:     color: #666666;\A 15:     padding: 0 26%;\A 16:     @include phones {"; }

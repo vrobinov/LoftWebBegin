@@ -1,18 +1,27 @@
-
-
 .reviews__display {
     display: flex;
     justify-content: space-between;
     background: #F8FAF9;
     padding: 2.333rem 8.33rem 2.333rem 2.333rem;
     margin-bottom: 0.833rem;
+    @include tablets {
+        padding:56px 24px 50px 24px;
+    }
 }
 .reviews__display-inner{
     display: flex;
+    @include tablets {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 .reviews__avatar{
     width: 14.05rem;
     height: 14.66rem;
+    @include tablets {
+    width: 7.22rem;
+    height: 7.22rem;
+    }
 }
 .reviews__avatar-img{
     object-fit: cover;
@@ -24,6 +33,10 @@
     margin-left: 2.111rem;
     padding-top: 1.555rem;
     padding-bottom: 0.333rem;
+    @include tablets {
+        text-align: center;
+        margin-left: 0;
+    }
 }
 .reviews__title{
     font-style: normal;

@@ -1,6 +1,13 @@
 
 .form {
     display: flex;
+    @include tablets {
+        flex-direction: column;
+        padding: 0 19%;
+    }
+    @include phones {
+        padding: 0;
+    }
 }
 .form__col {
     flex: 1;
@@ -8,6 +15,9 @@
     flex-direction: column;
     margin-right: 1.5rem;
     &:last-child{
+        margin-right: 0;
+    }
+    @include tablets {
         margin-right: 0;
     }
 }
@@ -44,6 +54,7 @@
     border:0;
     padding: 1.125rem 0.666rem;
     border: 3px solid transparent;
+    border-radius: 4px;
 
     &:focus{
         outline: none;
@@ -58,6 +69,9 @@
 .form__controls {
     display: flex;
     flex-wrap: wrap;
+    @include phones {
+        justify-content: center;
+    }
 }
 .radio{
     display: flex;
@@ -110,5 +124,8 @@
 
 .form__btns {
     display: flex;
+    @include tablets {
+        justify-content: center;
+    }
 
 }

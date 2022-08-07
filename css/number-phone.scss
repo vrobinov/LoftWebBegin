@@ -5,6 +5,7 @@
     line-height: 1.125rem;
     display: flex;
     align-items: center;
+    padding-top: 0.277rem;
     &__text{
         white-space: nowrap;
     }
@@ -27,6 +28,9 @@
     &--foot{
     @include tablets{
     display: inline-block;
+    }
+    @include phones {
+        margin-bottom: 1.125rem;
     }
     }
 }

@@ -13,6 +13,12 @@ $phones: 480px;
 
 html{
     font-size: 18px;
+    @include tablets {
+        font-size: 15px;
+    }
+    @include phones {
+        font-size: 13px;
+    }
 }
 html,
 body{
@@ -31,6 +37,9 @@ body {
     // min-width: $containerWidth + 1.111rem;
     min-height: 100%;
     overflow: hidden;
+    @include tablets {
+        min-width: 0;
+    }
 }
 footer{
     position: relative;
@@ -47,43 +56,43 @@ img{
 }
 
 
-@media screen and (max-width: 992px) {
-    html{
-        font-size: 16px;
-    }
-    .wrapper{
-        min-width: 0;
-    }
-    .container {
-    max-width: $container992;
-    width: auto;
-}
-}
+// @media screen and (max-width: 992px) {
+//     html{
+//         font-size: 17px;
+//     }
+//     .wrapper{
+//         min-width: 0;
+//     }
+//     .container {
+//     max-width: $container992;
+//     width: auto;
+// }
+// }
 
 
-@media screen and (max-width: 768px) {
-    html{
-        font-size: 14px;
-    }
-    .wrapper{
-        min-width: 0;
-    }
-    .container{
-        max-width: 55.63rem;
-        width: auto;
-    }
-}
+// @media screen and (max-width: 768px) {
+//     html{
+//         font-size: 15px;
+//     }
+//     .wrapper{
+//         min-width: 0;
+//     }
+//     .container{
+//         max-width: 55.63rem;
+//         width: auto;
+//     }
+// }
 
-@media screen and (max-width: 480px) {
-    html{
-        font-size: 12px;
-    }
-}
+// @media screen and (max-width: 480px) {
+//     html{
+//         font-size: 13px;
+//     }
+// }
 
-@media screen and (max-width: 320px) {
-    html{
-        font-size: 9px;
-    }
-}
+// @media screen and (max-width: 320px) {
+//     html{
+//         font-size: 9px;
+//     }
+// }
 
 

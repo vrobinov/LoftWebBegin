@@ -1,10 +1,17 @@
 
 .benefits{
     display: flex;
+    @include phones {
+        flex-direction: column;
+    }
     &__item{
         flex: 1;
         margin: 0 3%;
         position: relative;
+        @include phones {
+            padding: 0;
+            margin-bottom: 1.111rem;
+        }
         &:nth-child(-n+2)::after{
             content:"";
             position: absolute;
@@ -13,6 +20,9 @@
             top: 3.166rem;
             width: 3.722rem;
             height: 1.166rem;
+            @include tablets{
+                display: none;
+            }
     }
     }
 }

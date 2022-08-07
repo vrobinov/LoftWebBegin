@@ -1,23 +1,25 @@
 /*
-Error: Undefined variable: "$fontSize".
-        on line 36 of D:\WebDev\LoftBegin\SurfBoardProject\css\benefit.scss
+Error: Undefined mixin 'phones'.
+        on line 3 of D:\WebDev\LoftBegin\SurfBoardProject\css\benefit.scss, in `phones'
+        from line 3 of D:\WebDev\LoftBegin\SurfBoardProject\css\benefit.scss
 
-31:     margin-bottom: 1.277rem;
-32: }
-33: .benefit__info{
-34:     font-style: normal;
-35:     font-weight: 300;
-36:     font-size: $fontSize;
-37:     line-height: 1.222rem;
-38:     text-align: center;
-39:     color: #666666;
-40: }
+1: .benefit{
+2:     text-align: center;
+3:     @include phones {
+4:         display: flex;
+5:     }
+6:     &__image{
+7:         margin-bottom: 1.111rem;
+8:         @include phones{
 
 Backtrace:
-D:\WebDev\LoftBegin\SurfBoardProject\css\benefit.scss:36
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
+D:\WebDev\LoftBegin\SurfBoardProject\css\benefit.scss:3:in `phones'
+D:\WebDev\LoftBegin\SurfBoardProject\css\benefit.scss:3
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `with_mixin'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:350:in `visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
@@ -61,4 +63,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$fontSize\".\A         on line 36 of D:\WebDev\LoftBegin\SurfBoardProject\css\benefit.scss\A \A 31:     margin-bottom: 1.277rem;\A 32: }\A 33: .benefit__info{\A 34:     font-style: normal;\A 35:     font-weight: 300;\A 36:     font-size: $fontSize;\A 37:     line-height: 1.222rem;\A 38:     text-align: center;\A 39:     color: #666666;\A 40: }"; }
+  content: "Error: Undefined mixin 'phones'.\A         on line 3 of D:\WebDev\LoftBegin\SurfBoardProject\css\benefit.scss, in `phones'\A         from line 3 of D:\WebDev\LoftBegin\SurfBoardProject\css\benefit.scss\A \A 1: .benefit{\A 2:     text-align: center;\A 3:     @include phones {\A 4:         display: flex;\A 5:     }\A 6:     &__image{\A 7:         margin-bottom: 1.111rem;\A 8:         @include phones{"; }

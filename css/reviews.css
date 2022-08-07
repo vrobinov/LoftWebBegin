@@ -1,24 +1,28 @@
 /*
-Error: Undefined variable: "$fontSize".
-        on line 40 of D:\WebDev\LoftBegin\SurfBoardProject\css\reviews.scss
+Error: Undefined mixin 'tablets'.
+        on line 7 of D:\WebDev\LoftBegin\SurfBoardProject\css\reviews.scss, in `tablets'
+        from line 7 of D:\WebDev\LoftBegin\SurfBoardProject\css\reviews.scss
 
-35: }
-36: 
-37: .reviews__text {
-38:     font-style: normal;
-39:     font-weight: 400;
-40:     font-size: $fontSize;
-41:     line-height: 1.222rem;
-42:     color: #666666;
-43:     margin-bottom: 1.388rem;
-44: }
-45: .reviews__name-author {
+2:     display: flex;
+3:     justify-content: space-between;
+4:     background: #F8FAF9;
+5:     padding: 2.333rem 8.33rem 2.333rem 2.333rem;
+6:     margin-bottom: 0.833rem;
+7:     @include tablets {
+8:         padding:56px 24px 50px 24px;
+9:     }
+10: }
+11: .reviews__display-inner{
+12:     display: flex;
 
 Backtrace:
-D:\WebDev\LoftBegin\SurfBoardProject\css\reviews.scss:40
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
+D:\WebDev\LoftBegin\SurfBoardProject\css\reviews.scss:7:in `tablets'
+D:\WebDev\LoftBegin\SurfBoardProject\css\reviews.scss:7
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `with_mixin'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:350:in `visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
@@ -62,4 +66,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$fontSize\".\A         on line 40 of D:\WebDev\LoftBegin\SurfBoardProject\css\reviews.scss\A \A 35: }\A 36: \A 37: .reviews__text {\A 38:     font-style: normal;\A 39:     font-weight: 400;\A 40:     font-size: $fontSize;\A 41:     line-height: 1.222rem;\A 42:     color: #666666;\A 43:     margin-bottom: 1.388rem;\A 44: }\A 45: .reviews__name-author {"; }
+  content: "Error: Undefined mixin 'tablets'.\A         on line 7 of D:\WebDev\LoftBegin\SurfBoardProject\css\reviews.scss, in `tablets'\A         from line 7 of D:\WebDev\LoftBegin\SurfBoardProject\css\reviews.scss\A \A 2:     display: flex;\A 3:     justify-content: space-between;\A 4:     background: #F8FAF9;\A 5:     padding: 2.333rem 8.33rem 2.333rem 2.333rem;\A 6:     margin-bottom: 0.833rem;\A 7:     @include tablets {\A 8:         padding:56px 24px 50px 24px;\A 9:     }\A 10: }\A 11: .reviews__display-inner{\A 12:     display: flex;"; }
