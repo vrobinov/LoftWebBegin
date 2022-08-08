@@ -9,7 +9,7 @@ Error: Undefined mixin 'tablets'.
 5:     padding: 2.333rem 8.33rem 2.333rem 2.333rem;
 6:     margin-bottom: 0.833rem;
 7:     @include tablets {
-8:         padding:56px 24px 50px 24px;
+8:         padding:3.11rem 1.333rem 2.777rem 1.333rem;
 9:     }
 10: }
 11: .reviews__display-inner{
@@ -66,4 +66,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'tablets'.\A         on line 7 of D:\WebDev\LoftBegin\SurfBoardProject\css\reviews.scss, in `tablets'\A         from line 7 of D:\WebDev\LoftBegin\SurfBoardProject\css\reviews.scss\A \A 2:     display: flex;\A 3:     justify-content: space-between;\A 4:     background: #F8FAF9;\A 5:     padding: 2.333rem 8.33rem 2.333rem 2.333rem;\A 6:     margin-bottom: 0.833rem;\A 7:     @include tablets {\A 8:         padding:56px 24px 50px 24px;\A 9:     }\A 10: }\A 11: .reviews__display-inner{\A 12:     display: flex;"; }
+  content: "Error: Undefined mixin 'tablets'.\A         on line 7 of D:\WebDev\LoftBegin\SurfBoardProject\css\reviews.scss, in `tablets'\A         from line 7 of D:\WebDev\LoftBegin\SurfBoardProject\css\reviews.scss\A \A 2:     display: flex;\A 3:     justify-content: space-between;\A 4:     background: #F8FAF9;\A 5:     padding: 2.333rem 8.33rem 2.333rem 2.333rem;\A 6:     margin-bottom: 0.833rem;\A 7:     @include tablets {\A 8:         padding:3.11rem 1.333rem 2.777rem 1.333rem;\A 9:     }\A 10: }\A 11: .reviews__display-inner{\A 12:     display: flex;"; }

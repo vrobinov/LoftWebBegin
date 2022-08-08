@@ -26,3 +26,11 @@
     }
     }
 }
+
+@media screen and (max-width:992px){
+    .benefits__item{
+            &:nth-child(-n+2)::after{
+                display: none;
+    }
+}
+}
