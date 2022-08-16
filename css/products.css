@@ -1,22 +1,20 @@
 /*
 Error: Undefined mixin 'phones'.
-        on line 5 of D:\WebDev\LoftBegin\SurfBoardProject\css\products.scss, in `phones'
-        from line 5 of D:\WebDev\LoftBegin\SurfBoardProject\css\products.scss
+        on line 3 of D:\WebDev\LoftBegin\SurfBoardProject\css\products.scss, in `phones'
+        from line 3 of D:\WebDev\LoftBegin\SurfBoardProject\css\products.scss
 
 1: .products {
 2:     background-color:#F8FAF9;
-3:     padding-right: 6rem;
-4:     padding-left: 7.94rem;
-5:     @include phones{
-6:         padding: 0;
-7:     }
-8:     &__wrap-list{
-9:         overflow: hidden;
-10:     }
+3:     @include phones{
+4:         padding: 0;
+5:     }
+6:     &__wrap-list{
+7:         overflow: hidden;
+8:         position: relative;
 
 Backtrace:
-D:\WebDev\LoftBegin\SurfBoardProject\css\products.scss:5:in `phones'
-D:\WebDev\LoftBegin\SurfBoardProject\css\products.scss:5
+D:\WebDev\LoftBegin\SurfBoardProject\css\products.scss:3:in `phones'
+D:\WebDev\LoftBegin\SurfBoardProject\css\products.scss:3
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -65,4 +63,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'phones'.\A         on line 5 of D:\WebDev\LoftBegin\SurfBoardProject\css\products.scss, in `phones'\A         from line 5 of D:\WebDev\LoftBegin\SurfBoardProject\css\products.scss\A \A 1: .products {\A 2:     background-color:#F8FAF9;\A 3:     padding-right: 6rem;\A 4:     padding-left: 7.94rem;\A 5:     @include phones{\A 6:         padding: 0;\A 7:     }\A 8:     &__wrap-list{\A 9:         overflow: hidden;\A 10:     }"; }
+  content: "Error: Undefined mixin 'phones'.\A         on line 3 of D:\WebDev\LoftBegin\SurfBoardProject\css\products.scss, in `phones'\A         from line 3 of D:\WebDev\LoftBegin\SurfBoardProject\css\products.scss\A \A 1: .products {\A 2:     background-color:#F8FAF9;\A 3:     @include phones{\A 4:         padding: 0;\A 5:     }\A 6:     &__wrap-list{\A 7:         overflow: hidden;\A 8:         position: relative;"; }

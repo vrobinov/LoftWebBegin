@@ -1,20 +1,20 @@
 .products {
     background-color:#F8FAF9;
-    padding-right: 6rem;
-    padding-left: 7.94rem;
     @include phones{
         padding: 0;
     }
     &__wrap-list{
         overflow: hidden;
+        position: relative;
     }
     &__arrows{
-        position: relative;
         height: 100%;
     }
     &__arrow{
-        // top: 50%;
-        // transform: translate(-50%, -50%);
+        top: 50%;
+        @include tablets{
+            top: 30%;
+        }
         &--prev{
             position: absolute;
             left: 0;
@@ -30,8 +30,11 @@
     &__item{
         display: flex;
         flex: 0 0 100%;
+        padding-left: 3.611rem;
         @include tablets{
             flex-direction: column;
+            align-items: center;
+            padding-left: 0;
         }
     }
     &__preview{
@@ -39,11 +42,13 @@
         max-width: 22.05rem;
     }
     &__info{
-        margin-left: 4.5rem;
+        margin-left: 3.5rem;
         flex: 1;
+        padding-right: 2.222rem;
         @include tablets{
             margin-left: 0;
             text-align: center;
+            padding-right: 0;
         }
     }
     &__setting{
@@ -56,6 +61,9 @@
         justify-content: center;
         align-items: center;
         margin-bottom: 2.88rem;
+        &:hover{
+            background-color: #3465A3;
+        }
         @include tablets{
             display: none;
         }
