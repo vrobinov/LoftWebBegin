@@ -1,5 +1,11 @@
 .products {
     background-color:#F8FAF9;
+    position: relative;
+        .bx-wrapper{
+            border:0;
+            background: transparent;
+            box-shadow: none;
+        }
     @include phones{
         padding: 0;
     }
@@ -11,21 +17,27 @@
         height: 100%;
     }
     &__arrow{
+        display: block;
+        position: absolute;
         top: 50%;
+        z-index: 10;
         @include tablets{
             top: 30%;
         }
         &--prev{
-            position: absolute;
+            
             left: 0;
         }
         &--next{
-            position: absolute;
             right: 0;
         }
     }
     &__list{
-        display: flex;
+        // display: flex;
+        // width: 940px !important;
+        // max-width: 52.22rem;
+        // transition-duration: 0s;
+        // transform: none;
     }
     &__item{
         display: flex;
