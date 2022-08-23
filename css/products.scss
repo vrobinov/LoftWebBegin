@@ -1,10 +1,10 @@
 .products {
     background-color:#F8FAF9;
     position: relative;
-        .bx-wrapper{
-            border:0;
-            background: transparent;
-            box-shadow: none;
+    .bx-wrapper{
+        border:0;
+        background: transparent;
+        box-shadow: none;
         }
     @include phones{
         padding: 0;
@@ -32,13 +32,13 @@
             right: 0;
         }
     }
-    &__list{
-        // display: flex;
-        // width: 940px !important;
-        // max-width: 52.22rem;
-        // transition-duration: 0s;
-        // transform: none;
-    }
+    // &__list{
+    //     // display: flex;
+    //     // width: 940px !important;
+    //     // max-width: 52.22rem;
+    //     // transition-duration: 0s;
+    //     // transform: none;
+    // }
     &__item{
         display: flex;
         flex: 0 0 100%;
@@ -147,5 +147,6 @@
         text-transform: uppercase;
         color: #151515;
         margin-right: 1.666rem;
+        white-space: nowrap;
     }
 }

@@ -1,23 +1,23 @@
 /*
-Error: Undefined mixin 'phones'.
-        on line 9 of D:\WebDev\LoftBegin\SurfBoardProject\css\products.scss, in `phones'
-        from line 9 of D:\WebDev\LoftBegin\SurfBoardProject\css\products.scss
+Error: Undefined mixin 'tablets'.
+        on line 68 of D:\WebDev\LoftBegin\SurfBoardProject\css\team.scss, in `tablets'
+        from line 68 of D:\WebDev\LoftBegin\SurfBoardProject\css\team.scss
 
-4:     .bx-wrapper{
-5:         border:0;
-6:         background: transparent;
-7:         box-shadow: none;
-8:         }
-9:     @include phones{
-10:         padding: 0;
-11:     }
-12:     &__wrap-list{
-13:         overflow: hidden;
-14:         position: relative;
+63:     line-height: 1.222rem;
+64:     text-align: center;
+65:     color: #666666;
+66: }
+67: .team--adaptive--desktop{
+68:     @include tablets{
+69:         display: none;
+70:     }
+71:     .team__content{
+72:     position: absolute;
+73:     top: 100%;
 
 Backtrace:
-D:\WebDev\LoftBegin\SurfBoardProject\css\products.scss:9:in `phones'
-D:\WebDev\LoftBegin\SurfBoardProject\css\products.scss:9
+D:\WebDev\LoftBegin\SurfBoardProject\css\team.scss:68:in `tablets'
+D:\WebDev\LoftBegin\SurfBoardProject\css\team.scss:68
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -66,4 +66,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'phones'.\A         on line 9 of D:\WebDev\LoftBegin\SurfBoardProject\css\products.scss, in `phones'\A         from line 9 of D:\WebDev\LoftBegin\SurfBoardProject\css\products.scss\A \A 4:     .bx-wrapper{\A 5:         border:0;\A 6:         background: transparent;\A 7:         box-shadow: none;\A 8:         }\A 9:     @include phones{\A 10:         padding: 0;\A 11:     }\A 12:     &__wrap-list{\A 13:         overflow: hidden;\A 14:         position: relative;"; }
+  content: "Error: Undefined mixin 'tablets'.\A         on line 68 of D:\WebDev\LoftBegin\SurfBoardProject\css\team.scss, in `tablets'\A         from line 68 of D:\WebDev\LoftBegin\SurfBoardProject\css\team.scss\A \A 63:     line-height: 1.222rem;\A 64:     text-align: center;\A 65:     color: #666666;\A 66: }\A 67: .team--adaptive--desktop{\A 68:     @include tablets{\A 69:         display: none;\A 70:     }\A 71:     .team__content{\A 72:     position: absolute;\A 73:     top: 100%;"; }

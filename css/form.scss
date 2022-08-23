@@ -64,6 +64,9 @@
         height: 8.61rem;
         resize: none;
     }
+    &--error{
+        border: 3px solid hotpink;
+    }
 }
 
 .form__controls {
