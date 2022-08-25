@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$white".
-        on line 9 of D:\WebDev\LoftBegin\SurfBoardProject\css\modal.scss
+        on line 10 of D:\WebDev\LoftBegin\SurfBoardProject\css\modal.scss
 
-4:     .fancybox-close-small{
-5:         display: none;
-6:     }
-7:     &__box{
-8:         margin: auto;
-9:         background: $white;
-10:         width: 100%;
-11:         max-width: 309px;
-12:         padding: 37px;
-13:         display: flex;
-14:         flex-direction: column;
+5:     .fancybox-close-small{
+6:         display: none;
+7:     }
+8:     &__box{
+9:         margin: auto;
+10:         background: $white;
+11:         width: 100%;
+12:         max-width: 309px;
+13:         padding: 37px;
+14:         display: flex;
+15:         flex-direction: column;
 
 Backtrace:
-D:\WebDev\LoftBegin\SurfBoardProject\css\modal.scss:9
+D:\WebDev\LoftBegin\SurfBoardProject\css\modal.scss:10
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -73,4 +73,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$white\".\A         on line 9 of D:\WebDev\LoftBegin\SurfBoardProject\css\modal.scss\A \A 4:     .fancybox-close-small{\A 5:         display: none;\A 6:     }\A 7:     &__box{\A 8:         margin: auto;\A 9:         background: $white;\A 10:         width: 100%;\A 11:         max-width: 309px;\A 12:         padding: 37px;\A 13:         display: flex;\A 14:         flex-direction: column;"; }
+  content: "Error: Undefined variable: \"$white\".\A         on line 10 of D:\WebDev\LoftBegin\SurfBoardProject\css\modal.scss\A \A 5:     .fancybox-close-small{\A 6:         display: none;\A 7:     }\A 8:     &__box{\A 9:         margin: auto;\A 10:         background: $white;\A 11:         width: 100%;\A 12:         max-width: 309px;\A 13:         padding: 37px;\A 14:         display: flex;\A 15:         flex-direction: column;"; }

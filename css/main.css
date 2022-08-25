@@ -895,7 +895,8 @@ img {
 
 .modal {
   background: #313131;
-  display: none; }
+  display: none;
+  color: #000000; }
   .modal .fancybox-close-small {
     display: none; }
   .modal__box {
@@ -914,6 +915,8 @@ img {
     text-align: center;
     color: #000000;
     margin-bottom: 18px; }
+  .modal.error-modal .modal__box {
+    color: red; }
 
 .fancybox-content {
   padding: 0 !important; }

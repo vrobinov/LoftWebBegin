@@ -49,16 +49,16 @@ $('.form').submit(e => {
             content.text(data.message)
         });
         request.fail(data => {
-            const message = data.responseJSON.message;
+            const message = data.responseJSON ? data.responseJSON.message : "Упс! Ошибка сервера!"
             content.text(message);
             modal.addClass('error-modal');
-        })
+        });
         request.always(() => {
             $.fancybox.open({
                 src: '#modal',
                 type: 'inline'
             });
-        })
+        });
     }
 });
 
