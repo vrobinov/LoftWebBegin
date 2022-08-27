@@ -23,6 +23,4 @@ $('.team__title').click(e => {
         closeEveryBlock(container);
         openItem($this);
     }
-
-
-})
+});
