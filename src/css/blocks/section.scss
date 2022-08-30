@@ -1,0 +1,22 @@
+.section{
+    height: 100vh;
+    min-height: 36.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+.section__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.666rem;
+    line-height: 3.222rem;
+    text-align: center;
+    text-transform: uppercase;
+    &--black{
+        color: #292929;
+    }
+    &--white{
+        color: $white;
+    }    
+}

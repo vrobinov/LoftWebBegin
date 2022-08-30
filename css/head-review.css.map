@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,YAAY;EACR,aAAa,EAAE,QAAQ",
-"sources": ["head-review.scss"],
-"names": [],
-"file": "head-review.css"
-}

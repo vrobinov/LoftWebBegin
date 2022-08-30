@@ -1,0 +1,152 @@
+.products {
+    background-color:#F8FAF9;
+    position: relative;
+    .bx-wrapper{
+        border:0;
+        background: transparent;
+        box-shadow: none;
+        }
+    @include phones{
+        padding: 0;
+    }
+    &__wrap-list{
+        overflow: hidden;
+        position: relative;
+    }
+    &__arrows{
+        height: 100%;
+    }
+    &__arrow{
+        display: block;
+        position: absolute;
+        top: 50%;
+        z-index: 10;
+        @include tablets{
+            top: 30%;
+        }
+        &--prev{
+            
+            left: 0;
+        }
+        &--next{
+            right: 0;
+        }
+    }
+    // &__list{
+    //     // display: flex;
+    //     // width: 940px !important;
+    //     // max-width: 52.22rem;
+    //     // transition-duration: 0s;
+    //     // transform: none;
+    // }
+    &__item{
+        display: flex;
+        flex: 0 0 100%;
+        padding-left: 3.611rem;
+        @include tablets{
+            flex-direction: column;
+            align-items: center;
+            padding-left: 0;
+        }
+    }
+    &__preview{
+        width: 100%;
+        max-width: 22.05rem;
+    }
+    &__info{
+        margin-left: 3.5rem;
+        flex: 1;
+        padding-right: 2.222rem;
+        @include tablets{
+            margin-left: 0;
+            text-align: center;
+            padding-right: 0;
+        }
+    }
+    &__setting{
+        width: 5.05rem;
+        height: 5.05rem;
+        background: #3A587E;
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2.88rem;
+        &:hover{
+            background-color: #3465A3;
+        }
+        @include tablets{
+            display: none;
+        }
+    }
+    &__setting-icon{
+        width: 2.111rem;
+        height: 2.111rem;
+        margin-bottom: 7px;
+    }
+    &__setting-text{
+        font-weight: 700;
+        font-size: 14.0121px;
+        line-height: 0.388rem;
+        color: $white;
+        text-transform: uppercase;
+    }
+    &__title{
+        font-weight: 700;
+        font-size: 2rem;
+        line-height: 2.388rem;
+        text-transform: uppercase;
+        color: #292929;
+        margin-bottom: 1.333rem;
+    }
+    &__desc{
+        font-weight: 400;
+        font-size: 1.125rem;
+        line-height: 1.222rem;
+        color: #666666;
+        margin-bottom: 1.333rem;
+    }
+    &__weight{
+        display: flex;
+        margin-bottom: 1.333rem;
+        @include tablets{
+            justify-content: center;
+        }
+        &-item{
+            display: flex;
+            flex-direction: column;
+            &:not(:first-child){
+                margin-left: 3.055rem;
+            }
+        }
+        &-title{
+            font-weight: 400;
+            font-size: 1.125rem;
+            line-height: 1.222rem;
+            color: #666666;
+        }
+        &-length{
+            font-weight: 700;
+            font-size: 1.125rem;
+            line-height: 1.222rem;
+            color: #000000;
+        }
+    }
+    &__footer{
+        display: flex;
+        align-items: flex-end;
+        @include tablets{
+            justify-content: center;
+        }
+    }
+    &__price{
+        font-weight: 300;
+        font-size: 3.33rem;
+        line-height: 3.33rem;
+        text-transform: uppercase;
+        color: #151515;
+        margin-right: 1.666rem;
+        white-space: nowrap;
+    }
+}

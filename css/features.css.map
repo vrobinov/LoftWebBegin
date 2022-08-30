@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,SAAS;EACL,OAAO,EAAE,IAAI;EAEb,eAAO;IACH,YAAY,EAAE,QAAQ;IACtB,0BAAY;MACR,YAAY,EAAE,CAAC;;AAI3B,oCAAqC;EACjC,SAAS;IACL,OAAO,EAAE,IAAI",
-"sources": ["features.scss"],
-"names": [],
-"file": "features.css"
-}
