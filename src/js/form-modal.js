@@ -1,3 +1,4 @@
+;
 const validateFields = (form, fieldsArray) => {
     fieldsArray.forEach(field => {
         field.removeClass('form__row-input--error');

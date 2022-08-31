@@ -1,3 +1,4 @@
+;
 const mesureWidth = item => {
     let regItemWidth = 0;
     const screenWidth = $(window).width();
@@ -62,4 +63,4 @@ $('.products-menu__title').on('click', e => {
 $('.products-menu__close').on('click', e => {
     e.preventDefault();
     closeEveryHorizonContainer($('.products-menu'));
-})
+});

@@ -1,3 +1,4 @@
+;
 const sections = $('section');
 const display = $('.maincontent');
 const sideMenu = $('.dots-bar');
@@ -141,4 +142,4 @@ if (isMobile) {
             scroller[scrollDirection]();
         },
     });
-}
+};

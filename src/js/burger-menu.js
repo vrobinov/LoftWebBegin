@@ -1,3 +1,4 @@
+;
 class BurgerMenu {
     constructor(selector) {
         this.menu = document.querySelector(selector)
@@ -23,4 +24,4 @@ class BurgerMenu {
 
 
 
-let menu = new BurgerMenu('#burger-menu')
+let menu = new BurgerMenu('#burger-menu');

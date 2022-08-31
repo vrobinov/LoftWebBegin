@@ -1,3 +1,4 @@
+;
 let player;
 const playerContainer = $(".video");
 const playBig = $(".video__playbig");
@@ -106,4 +107,4 @@ function onYouTubeIframeAPIReady() {
             modestbranding: 0
         }
     });
-}
+};

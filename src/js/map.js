@@ -1,3 +1,4 @@
+;
 let myMap;
 
 const init = () => {
