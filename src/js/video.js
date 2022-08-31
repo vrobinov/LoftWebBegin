@@ -4,30 +4,6 @@ const playerContainer = $(".video");
 const playBig = $(".video__playbig");
 const playSmall = $(".video__playsmall");
 
-// let eventsInit = () => {
-//     $('.video__playsmall').click(e => {
-//         e.preventDefault();
-
-
-//         if (playerContainer.hasClass("paused")) {
-//             playerContainer.removeClass("paused");
-//             player.pauseVideo();
-//         } else {
-//             playerContainer.addClass("paused");
-//             player.playVideo();
-//         }
-
-//         if (playerContainer.hasClass("paused-splash")){
-//             player.pauseVideo();
-//         } else{
-//             playerContainer.addClass("paused-splash");
-//             player.playVideo();
-//         }
-
-//     });
-// };
-
-
 const eventPlay = (playTarget) => {
     playTarget.click(e => {
         e.preventDefault();
@@ -40,12 +16,6 @@ const eventPlay = (playTarget) => {
             player.playVideo();
         }
 
-        // if (playerContainer.hasClass("paused-splash")) {
-        //     player.pauseVideo();
-        // } else {
-        //     playerContainer.addClass("paused-splash");
-        //     player.playVideo();
-        // }
     });
 
     $('.video__progress').click(e => {
