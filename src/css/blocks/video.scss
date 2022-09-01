@@ -6,8 +6,8 @@
     }
     &__item{
         display: flex;
-        width: 662px;
-        height: 391px;
+        width: 36.77rem;
+        height: 21.72rem;
         @include tablets {
             width: 100%;
             height: auto;
@@ -27,17 +27,17 @@
         right: 0;
         bottom: 0;
         left: 0;
-        height: 35px;
+        height: 1.944rem;
         background: #404040;
         display: flex;
         align-items: center;
-        padding: 0 38px 0 17px;
+        padding: 0 2.111rem 0 0.944rem;
         z-index: 10;
         @include tablets {
-            padding: 0 38px;
+            padding: 0 2.111rem;
         }
         @include phones {
-            padding: 0 23px;
+            padding: 0 1.277rem;
     }
     }
     &__playbig{
@@ -46,21 +46,21 @@
         top: 50%;
         left: 50%;
         transform:translate(-50%, -50%);
-        width: 75px;
-        height: 110px;
+        width: 4.166rem;
+        height: 6.111rem;
         z-index: 100 !important;
     }
     &__playsmall{
         cursor: pointer;
-        width: 11px;
-        height: 16px;
+        width: 0.611rem;
+        height: 0.888rem;
     }
     &__progress{
         cursor: pointer;
         flex: 1;
         background: #626262;
-        height: 7px;
-        margin-left: 30px;
+        height: 0.388rem;
+        margin-left: 1.666rem;
     }
     &__total{
         width: 100%;
@@ -78,8 +78,8 @@
             top: 0;
             left: 100%;
             transform: translate(0, -35%);
-            width: 15px;
-            height: 15px;
+            width: 0.833rem;
+            height: 0.833rem;
             background: #FEDB3F;
             border-radius: 50%;
         }
@@ -87,19 +87,19 @@
     &__volume{
         display: flex;
         align-items: center;
-        margin-left: 43px;
+        margin-left: 2.388rem;
         &-control{
             cursor: pointer;
-            width: 13px;
-            height: 16px;
+            width: 0.722rem;
+            height: 0.888rem;
         }
         &-progress{
-            min-width: 58px;
-            margin-left: 13px;
+            min-width: 3.222rem;
+            margin-left: 0.722rem;
             cursor: pointer;
             flex: 1;
             background: #626262;
-            height: 7px;
+            height: 0.388rem;
         }
         &-current{
             height: 100%;
@@ -111,8 +111,8 @@
             top: 0;
             left: 100%;
             transform: translate(0, -35%);
-            width: 15px;
-            height: 15px;
+            width: 0.833rem;
+            height: 0.833rem;
             background: #FEDB3F;
             border-radius: 50%;
         }

@@ -1,6 +1,10 @@
 .head-products{
     position: absolute;
-    top: 109px;
-    left: 84px;
+    top: 6.055rem;
+    left: 4.666rem;
     z-index: 1;
+    @include phones{
+        top: 2.777rem;
+        left: 0.388rem;
+    }
 }
