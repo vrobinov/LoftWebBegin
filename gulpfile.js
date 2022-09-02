@@ -122,8 +122,10 @@ task('icons', () => {
 task('server', () => {
     browserSync.init({
         server: {
-            baseDir: `./${DIST_PATH}`
+            baseDir: `./${DIST_PATH}`,
+            index: "index.html"
         },
+        port: 3000,
         open: false
     });
 });
