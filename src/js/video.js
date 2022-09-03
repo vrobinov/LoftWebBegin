@@ -44,7 +44,19 @@ $('.video__volume-control').click(e => {
         player.mute();
 
     }
-})
+});
+
+$('.video__volume-progress').click(e => {
+    const barVolume = $(e.currentTarget);
+    const clickedPositionVolume = e.originalEvent.layerX;
+    const newBtnPositionPercentVolume = ((clickedPositionVolume / barVolume.width()) * 100);
+    player.setVolume(newBtnPositionPercentVolume);
+
+    $(".video__volume-current").css({
+        width: `${newBtnPositionPercentVolume}%`
+    });
+
+});
 
 eventPlay(playBig);
 eventPlay(playSmall);

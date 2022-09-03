@@ -5,7 +5,7 @@ const init = () => {
     myMap = new ymaps.Map('map', {
         center: [55.76, 37.64],
         zoom: 13,
-        // controls: []
+        controls: [],
     });
     const coords = [
         [55.740730, 37.622881],
