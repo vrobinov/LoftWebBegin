@@ -125,19 +125,18 @@
     }
 }
 .paused {
-    .video__playbig-icon,
-    .video__splash {
+    .video__playbig-icon {
     visibility: hidden;
     }
     .video__playsmall-icon {
     fill-opacity: 0.3;
     }
 }
-// .paused-splash{
-//     .video__splash {
-//     visibility: hidden;
-//     }
-// }
+.paused-splash{
+    .video__splash {
+    visibility: hidden;
+    }
+}
 .mute{
     .video__volume-icon{
         fill-opacity: .3;

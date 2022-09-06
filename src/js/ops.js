@@ -139,7 +139,10 @@ if (isMobile) {
 
             if (direction === "up") scrollDirection = "next";
             if (direction === "down") scrollDirection = "prev";
-            scroller[scrollDirection]();
+            console.log(scrollDirection, direction);
+            if (scrollDirection) {
+                scroller[scrollDirection]();
+            };
         },
     });
 };

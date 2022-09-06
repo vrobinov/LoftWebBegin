@@ -1,75 +1,85 @@
 ;
 let player;
-const playerContainer = $(".video");
-const playBig = $(".video__playbig");
-const playSmall = $(".video__playsmall");
 
-const eventPlay = (playTarget) => {
-    playTarget.click(e => {
-        e.preventDefault();
+function onPlayerReady() {
+    const playerContainer = $(".video");
+    const playBig = $(".video__playbig");
+    const playSmall = $(".video__playsmall");
 
-        if (playerContainer.hasClass("paused")) {
-            playerContainer.removeClass("paused");
-            player.pauseVideo();
-        } else {
-            playerContainer.addClass("paused");
-            player.playVideo();
-        }
+    const eventPlay = (playTarget) => {
+        playTarget.click(e => {
+            e.preventDefault();
 
-    });
+            if (playerContainer.hasClass("paused")) {
+                playerContainer.removeClass("paused");
+                player.pauseVideo();
+            } else {
+                playerContainer.addClass("paused");
+                player.playVideo();
+            }
 
-    $('.video__progress').click(e => {
-        const bar = $(e.currentTarget);
-        const clickedPosition = e.originalEvent.layerX;
-
-        const newButtonPositionPercent = (clickedPosition / bar.width()) * 100;
-        const newPlaybackPositionSec =
-            (player.getDuration() / 100) * newButtonPositionPercent;
-
-        $(".video__current").css({
-            left: `${newButtonPositionPercent}%`
+            if (!playerContainer.hasClass("paused-splash")) {
+                playerContainer.addClass("paused-splash");
+            };
         });
 
-        player.seekTo(newPlaybackPositionSec);
-    });
-};
 
-$('.video__volume-control').click(e => {
-    const btnVolume = $('.video__volume-control');
-    if (player.isMuted()) {
-        btnVolume.removeClass('mute')
-        player.unMute()
-    } else {
-        btnVolume.addClass('mute');
-        player.mute();
 
-    }
-});
+        $('.video__total').click(e => {
+            const bar = $(e.currentTarget);
+            const clickedPosition = e.offsetX;
 
-$('.video__volume-progress').click(e => {
-    const barVolume = $(e.currentTarget);
-    const clickedPositionVolume = e.originalEvent.layerX;
-    const newBtnPositionPercentVolume = ((clickedPositionVolume / barVolume.width()) * 100);
-    player.setVolume(newBtnPositionPercentVolume);
+            const newButtonPositionPercent = (clickedPosition / bar.width()) * 100;
+            const newPlaybackPositionSec =
+                (player.getDuration() / 100) * newButtonPositionPercent;
 
-    $(".video__volume-current").css({
-        width: `${newBtnPositionPercentVolume}%`
-    });
+            $(".video__current").css({
+                left: `${newButtonPositionPercent}%`
+            });
 
-});
+            player.seekTo(newPlaybackPositionSec);
+        });
+    };
 
-eventPlay(playBig);
-eventPlay(playSmall);
+    $('.video__volume-control').click(e => {
+        const btnVolume = $('.video__volume-control');
+        if (player.isMuted()) {
+            btnVolume.removeClass('mute')
+            player.unMute()
+        } else {
+            btnVolume.addClass('mute');
+            player.mute();
 
-let interval = setInterval(() => {
-    const durationSec = player.getDuration();
-    const completedSec = player.getCurrentTime();
-    const completedPercent = (completedSec / durationSec) * 100;
-    $(".video__current").css({
-        left: `${completedPercent}%`
+        }
     });
 
-}, 1000)
+    $('.video__volume-progress').click(e => {
+        const barVolume = $(e.currentTarget);
+        const clickedPositionVolume = e.offsetX;
+        const newBtnPositionPercentVolume = ((clickedPositionVolume / barVolume.width()) * 100);
+        if (newBtnPositionPercentVolume > 100) return
+
+        player.setVolume(newBtnPositionPercentVolume);
+
+        $(".video__volume-current").css({
+            width: `${newBtnPositionPercentVolume}%`
+        });
+
+    });
+
+    eventPlay(playBig);
+    eventPlay(playSmall);
+
+    let interval = setInterval(() => {
+        const durationSec = player.getDuration();
+        const completedSec = player.getCurrentTime();
+        const completedPercent = (completedSec / durationSec) * 100;
+        $(".video__current").css({
+            left: `${completedPercent}%`
+        });
+
+    }, 1000)
+}
 
 function onYouTubeIframeAPIReady() {
     player = new YT.Player("yt-player", {
@@ -77,7 +87,7 @@ function onYouTubeIframeAPIReady() {
         width: "662",
         videoId: "vk5H1DzvHu8",
         events: {
-            // onReady: onPlayerReady,
+            onReady: onPlayerReady,
             // onStateChange: onPlayerStateChange
         },
         playerVars: {

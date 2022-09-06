@@ -126,12 +126,12 @@ task('server', () => {
             index: "index.html"
         },
         port: 3000,
-        open: false
+        open: true
     });
 });
 
 task("watch", () => {
-    watch('./src/styles/**/*/scss', series('styles'));
+    watch('./src/styles/**/*.scss', series('styles'));
     watch('./src/*.html', series('copy:html'));
     watch('./src/image/*', series('copy:img'));
     watch('./src/js/**/*.js', series('scripts'));
