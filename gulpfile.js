@@ -131,7 +131,7 @@ task('server', () => {
 });
 
 task("watch", () => {
-    watch('./src/styles/**/*.scss', series('styles'));
+    watch('./src/css/**/*.scss', series('styles'));
     watch('./src/*.html', series('copy:html'));
     watch('./src/image/*', series('copy:img'));
     watch('./src/js/**/*.js', series('scripts'));
